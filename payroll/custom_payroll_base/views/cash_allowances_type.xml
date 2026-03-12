@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="cash_allowances_type_view_action"
+                model="ir.actions.act_window">
+            <field name="name">Types of Cash Allowances</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cash.allowances.type</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create New Cash Allowances
+                </p>
+            </field>
+        </record>
+         <menuitem id="menu_cash_allowances_type"
+                  parent="hr_work_entry_contract_enterprise.menu_hr_payroll_configuration"
+                  name="Cash Allowances" sequence="101"
+                  action="cash_allowances_type_view_action"
+                  groups="hr.group_hr_manager"/>
+        <!-- Cash Allowances Type Form view-->
+        <record id="cash_allowances_type_form_view" model="ir.ui.view">
+            <field name="name">cash.allowances.type.form.view</field>
+            <field name="model">cash.allowances.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="id" invisible="True"/>
+                        <group name="allowances_type" string="Cash Allowances">
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="rule_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Cash Allowances Type Tree view-->
+        <record id="cash_allowances_type_tree_view" model="ir.ui.view">
+            <field name="name">cash.allowances.type.tree.view</field>
+            <field name="model">cash.allowances.type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="rule_id"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

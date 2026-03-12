@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="kenya_rule46" model="hr.salary.rule">
+            <field name="sequence">46</field>
+            <field name="code">P046</field>
+            <field name="name">NSSF Tier I</field>
+            <field name="category_id" ref="custom_payroll_base.category11"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+#######
+nssf = 0.0
+### Calculation of NSSF Tier I Employer Contribution based on Gross Pay###
+if employee.resident:
+    TIER1_RATE = 0.06
+    LEL = 9000
+    PAY = categories.C006
+    if PAY <= LEL:
+        nssf = round(TIER1_RATE * PAY)
+    elif PAY > LEL:
+        nssf = round(TIER1_RATE * LEL)
+result = nssf
+            ]]></field>
+        </record>
+        <record id="kenya_rule47" model="hr.salary.rule">
+            <field name="sequence">47</field>
+            <field name="code">P047</field>
+            <field name="name">NSSF Tier II</field>
+            <field name="category_id" ref="custom_payroll_base.category11"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+#######
+nssf = 0.0
+### Calculation of NSSF Tier II Contribution based on Gross Pay###
+if employee.resident:
+    TIER2_RATE = 0.06
+    LEL = 9000
+    UEL = 108000
+    PAY = categories.C006
+    if PAY > LEL and PAY <= UEL:
+        nssf = round(TIER2_RATE* (PAY - LEL))
+    elif PAY > UEL:
+        nssf = round(TIER2_RATE* (UEL - LEL))
+result = nssf
+
+            ]]></field>
+        </record>
+        <record id="kenya_rule55" model="hr.salary.rule">
+            <field name="sequence">55</field>
+            <field name="code">P055</field>
+            <field name="name">Total NSSF</field>
+            <field name="category_id" ref="custom_payroll_base.category12"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident and categories.C011
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C011
+            ]]></field>
+        </record>
+        <record id="kenya_rule56" model="hr.salary.rule">
+            <field name="sequence">56</field>
+            <field name="code">P056</field>
+            <field name="name">NSSF Tier I - Employer</field>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="category_id" ref="custom_payroll_base.category13"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+#######
+nssf = 0.0
+### Calculation of NSSF Tier I Employer Contribution based on Gross Pay###
+if employee.resident:
+    TIER1_RATE = 0.06
+    LEL = 9000
+    PAY = categories.C006
+    if PAY <= LEL:
+        nssf = round(TIER1_RATE * PAY)
+    elif PAY > LEL:
+        nssf = round(TIER1_RATE * LEL)
+result = nssf
+
+            ]]></field>
+        </record>
+        <record id="kenya_rule57" model="hr.salary.rule">
+            <field name="sequence">57</field>
+            <field name="code">P057</field>
+            <field name="name">NSSF Tier II - Employer</field>
+            <field name="category_id" ref="custom_payroll_base.category13"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+#######
+nssf = 0.0
+### Calculation of NSSF Tier II Contribution based on Gross Pay###
+if employee.resident:
+    TIER2_RATE = 0.06
+    LEL = 9000
+    UEL = 108000
+    PAY = categories.C006
+    if PAY > LEL and PAY <= UEL:
+        nssf = round(TIER2_RATE* (PAY - LEL))
+    elif PAY > UEL:
+        nssf = round(TIER2_RATE* (UEL - LEL))
+result = nssf
+            ]]></field>
+        </record>
+        <record id="kenya_rule65" model="hr.salary.rule">
+            <field name="sequence">65</field>
+            <field name="code">P065</field>
+            <field name="name">Total NSSF Contributions -Employer</field>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="category_id" ref="custom_payroll_base.category14"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C013
+            ]]></field>
+        </record>
+        <record id="kenya_rule66" model="hr.salary.rule">
+            <field name="sequence">66</field>
+            <field name="code">P066</field>
+            <field name="name">S.H.I.F</field>
+            <field name="category_id" ref="category38"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+NOTICE_PAY = result_rules.P015['amount']
+PAY = categories.C006 ## Gross Pay
+value = PAY  * 0.0275
+result = max(300, value)
+            ]]></field>
+        </record>
+        <record id="kenya_rule67" model="hr.salary.rule">
+            <field name="sequence">67</field>
+            <field name="code">P067</field>
+            <field name="name">Housing Levy</field>
+            <field name="category_id" ref="category37"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+PAY = categories.C006 ## Gross Pay
+result = PAY  * 0.015
+            ]]></field>
+        </record>
+        <record id="kenya_rule80" model="hr.salary.rule">
+            <field name="sequence">80</field>
+            <field name="code">P080</field>
+            <field name="name">Total Allowed Deductions</field>
+            <field name="category_id" ref="custom_payroll_base.category21"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C020
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C020 + categories.C037 + categories.C038 ##Allowed deductions Category
+            ]]></field>
+        </record>
+        <record id="kenya_rule86" model="hr.salary.rule">
+            <field name="sequence">86</field>
+            <field name="code">P086</field>
+            <field name="name">P.A.Y.E</field>
+            <field name="category_id" ref="custom_payroll_base.category24"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.tax_applicable in ['paye'] ####NOTE: valid words are [paye,wht]
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+#round_up = lambda x: int(x + 1) if int(x) != x else int(x)
+#min_taxable = KES 24000.00 per month
+first_margin= 24000
+first_rate = 0.10
+second_margin = 32333
+second_rate = 0.25
+third_margin = 500000
+third_rate = 0.30
+fourth_margin = 800000
+fourth_rate = 0.325
+fifth_rate = 0.35
+TAXABLE = categories.C023 ## Taxable Pay
+if TAXABLE <= first_margin:
+    tax = (first_rate * TAXABLE)
+elif TAXABLE <= second_margin and TAXABLE > first_margin :
+    tax = ((first_rate * first_margin) + (second_rate * (TAXABLE- first_margin)))
+elif TAXABLE <= third_margin and TAXABLE > second_margin :
+    tax = ((first_rate * first_margin) + (second_rate * (second_margin - first_margin)) + (third_rate * (TAXABLE - second_margin)))
+elif TAXABLE <= fourth_margin and TAXABLE > third_margin :
+    tax = ((first_rate * first_margin) + (second_rate * (second_margin - first_margin)) + (third_rate * (third_margin - second_margin)) + (fourth_rate * (TAXABLE - third_margin)))
+elif TAXABLE > third_margin:
+    tax = ((first_rate * first_margin) + (second_rate * (second_margin - first_margin)) + (third_rate * (third_margin - second_margin)) + (fourth_rate * (fourth_margin - third_margin))+ (fifth_rate * (TAXABLE - fourth_margin)))
+else:
+    tax = 0.0
+#result = round_up(tax)
+result = tax
+
+            ]]></field>
+        </record>
+        <record id="kenya_rule91" model="hr.salary.rule">
+            <field name="sequence">91</field>
+            <field name="code">P091</field>
+            <field name="name">Personal Tax Relief</field>
+            <field name="category_id" ref="custom_payroll_base.category26"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.resident and employee.employee_type == 'employee'
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+PERSONAL_RELIEF = 0.0
+if employee.resident and employee.employee_type == 'employee' and categories.C024:
+    PERSONAL_RELIEF = 2400.00
+result = PERSONAL_RELIEF
+
+            ]]></field>
+        </record>
+        <record id="kenya_rule95" model="hr.salary.rule">
+            <field name="sequence">95</field>
+            <field name="code">P095</field>
+            <field name="name">Tax Relief</field>
+            <field name="category_id" ref="custom_payroll_base.category27"/>
+            <field name="struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C026
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C026
+            ]]></field>
+        </record>
+    </data>
+</odoo>

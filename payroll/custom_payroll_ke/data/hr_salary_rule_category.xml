@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+         <record id="category37" model="hr.salary.rule.category">
+            <field name="code">C037</field>
+            <field name="name">Housing Levy Category</field>
+            <field name="note">A Category for Housing Levy</field>
+        </record>
+        <record id="category38" model="hr.salary.rule.category">
+            <field name="code">C038</field>
+            <field name="name">S.H.I.F Category</field>
+            <field name="note">A Category for S.H.I.F</field>
+        </record>
+    </data>
+</odoo>

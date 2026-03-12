@@ -1,0 +1,38 @@
+# -*- coding:utf-8 -*-
+# Copyright (C) 2026 Dishon Kadoh (<dishon.kadoh@gmail.com>).
+{
+    'name': 'Custom Payroll Base',
+    'version': '1.0',
+    'sequence': -1,
+    'summary': 'Base payroll module for company-specific payroll modules',
+    'description': 'Provides base payroll models, rules, and computations to be inherited by other payroll modules.',
+    'category': 'Human Resources/Payroll',
+    'author': 'Dishon Kadoh',
+    'website': 'https://dishonkadoh.com/',
+    'license': 'LGPL-3',
+    'depends': ['base',
+                'hr_payroll'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/hr_payroll_structure_type.xml',
+        'data/hr_payroll_structure.xml',
+        'data/hr_payroll_structure_type_update.xml',
+        'data/hr_salary_rule_category.xml',
+        'data/hr_salary_rule.xml',
+        'data/benefit_type.xml',
+        'data/deductions_type.xml',
+        'data/cash_allowances_type.xml',
+        'views/deductions_type.xml',
+        'views/cash_allowances_type.xml',
+        'views/benefit_type.xml',
+        'views/hr_employee.xml',
+        'views/base_deductions.xml',
+        'views/hr_contract.xml',
+        'views/cash_allowances.xml',
+        'views/non_cash_allowances.xml',
+        'views/hr_payroll_structure.xml',
+
+    ],
+    'installable': True,
+    'application': True,
+}

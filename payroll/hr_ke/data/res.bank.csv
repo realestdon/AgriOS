@@ -1,0 +1,1577 @@
+id,bic,name
+ke_bank1,0 - Head Office/koinange St. ,African Banking Corp. Bank Ltd
+ke_bank2,1 - Westlands,African Banking Corp. Bank Ltd
+ke_bank3,2 - Industrial Area Branch ,African Banking Corp. Bank Ltd
+ke_bank4,3 - Nkrumah Road Branch/mombasa ,African Banking Corp. Bank Ltd
+ke_bank5,4 - Kisumu Branch ,African Banking Corp. Bank Ltd
+ke_bank6,5 - Eldoret Branch,African Banking Corp. Bank Ltd
+ke_bank7,6 - Meru Branch ,African Banking Corp. Bank Ltd
+ke_bank8,7 - Libra House ,African Banking Corp. Bank Ltd
+ke_bank9,8 - Nakuru,African Banking Corp. Bank Ltd
+ke_bank10,9 - Lamu,African Banking Corp. Bank Ltd
+ke_bank11,0 - Reinsurance Plaza Nairobi ,Bank of  Africa Kenya Limited
+ke_bank12,1 - Mombasa ,Bank of  Africa Kenya Limited
+ke_bank13,2 - Westlands ,Bank of  Africa Kenya Limited
+ke_bank14,3 - Uhuru Highway ,Bank of  Africa Kenya Limited
+ke_bank15,4 - River Road ,Bank of  Africa Kenya Limited
+ke_bank16,5 - Thika ,Bank of  Africa Kenya Limited
+ke_bank17,6 - Kisumu ,Bank of  Africa Kenya Limited
+ke_bank18,7 - Ruaraka ,Bank of  Africa Kenya Limited
+ke_bank19,8 - Monrovia Street ,Bank of  Africa Kenya Limited
+ke_bank20,9 - Nakuru ,Bank of  Africa Kenya Limited
+ke_bank21,10 - Ngong Road ,Bank of  Africa Kenya Limited
+ke_bank22,11 - Eldoret ,Bank of  Africa Kenya Limited
+ke_bank23,12 - Embakasi ,Bank of  Africa Kenya Limited
+ke_bank24,13 - Kericho ,Bank of  Africa Kenya Limited
+ke_bank25,14 - Ongata Rongai,Bank of  Africa Kenya Limited
+ke_bank26,15 - Changamwe,Bank of  Africa Kenya Limited
+ke_bank27,16 - Bungoma,Bank of  Africa Kenya Limited
+ke_bank28,17 - KISII,Bank of  Africa Kenya Limited
+ke_bank29,18 - MERU,Bank of  Africa Kenya Limited
+ke_bank30,19 - Kitengela,Bank of  Africa Kenya Limited
+ke_bank31,20 - Nyali,Bank of  Africa Kenya Limited
+ke_bank32,21 - Galleria,Bank of  Africa Kenya Limited
+ke_bank33,22 - Greenspan Mall,Bank of  Africa Kenya Limited
+ke_bank34,23 - Upper Hilll,Bank of  Africa Kenya Limited
+ke_bank35,24 - Nanyuki,Bank of  Africa Kenya Limited
+ke_bank36,25 - Lunga Lunga Road,Bank of  Africa Kenya Limited
+ke_bank37,26 - Kenyatta Avenue,Bank of  Africa Kenya Limited
+ke_bank38,27 - Sameer Business Park,Bank of  Africa Kenya Limited
+ke_bank39,"28 - Moi Avenue, Mombasa",Bank of  Africa Kenya Limited
+ke_bank40,29 - Ongata Rongai II,Bank of  Africa Kenya Limited
+ke_bank41,30 - Gikomba,Bank of  Africa Kenya Limited
+ke_bank42,31 - Githurai,Bank of  Africa Kenya Limited
+ke_bank43,32 - Embu,Bank of  Africa Kenya Limited
+ke_bank44,33 - Gateway Mall,Bank of  Africa Kenya Limited
+ke_bank45,34 - Kitale,Bank of  Africa Kenya Limited
+ke_bank46,35 - South B,Bank of  Africa Kenya Limited
+ke_bank47,36 - Digo Road,Bank of  Africa Kenya Limited
+ke_bank48,0 - Nairobi Main ,Bank of Baroda (Kenya Limited)
+ke_bank49,"2 - Digo Road, Mombasa ",Bank of Baroda (Kenya Limited)
+ke_bank50,4 - Thika ,Bank of Baroda (Kenya Limited)
+ke_bank51,5 - Kisumu ,Bank of Baroda (Kenya Limited)
+ke_bank52,6 - Sarit Centre ,Bank of Baroda (Kenya Limited)
+ke_bank53,7 - Industrial Area ,Bank of Baroda (Kenya Limited)
+ke_bank54,8 - Eldoret ,Bank of Baroda (Kenya Limited)
+ke_bank55,9 - Nakuru ,Bank of Baroda (Kenya Limited)
+ke_bank56,10 - Kakamega,Bank of Baroda (Kenya Limited)
+ke_bank57,11 - Nyali Mombasa,Bank of Baroda (Kenya Limited)
+ke_bank58,"0 - Kenyatta Avenue , Nairobi ",Bank of India
+ke_bank59,"1 - Nkrumah Road , Mombasa ",Bank of India
+ke_bank60,2 - Industrial Area ,Bank of India
+ke_bank61,3 - Westlands ,Bank of India
+ke_bank62,4 - Kisumu,Bank of India
+ke_bank63,5 - Eldoret,Bank of India
+ke_bank64,1 - Head Office - Vpc ,Barclays Bank of Kenya Limited
+ke_bank65,2 - Kapsabet Branch ,Barclays Bank of Kenya Limited
+ke_bank66,3 - Eldoret Branch ,Barclays Bank of Kenya Limited
+ke_bank67,4 - Embu Branch ,Barclays Bank of Kenya Limited
+ke_bank68,5 - Murang A Branch ,Barclays Bank of Kenya Limited
+ke_bank69,6 - Kapenguria Branch ,Barclays Bank of Kenya Limited
+ke_bank70,7 - Kericho Branch ,Barclays Bank of Kenya Limited
+ke_bank71,8 - Kisii Branch ,Barclays Bank of Kenya Limited
+ke_bank72,9 - Kisumu Branch ,Barclays Bank of Kenya Limited
+ke_bank73,10 - South C Branch ,Barclays Bank of Kenya Limited
+ke_bank74,11 - Limuru Branch ,Barclays Bank of Kenya Limited
+ke_bank75,12 - Malindi Branch ,Barclays Bank of Kenya Limited
+ke_bank76,13 - Meru Branch ,Barclays Bank of Kenya Limited
+ke_bank77,14 - Eastleigh Branch ,Barclays Bank of Kenya Limited
+ke_bank78,15 - Kitui Branch ,Barclays Bank of Kenya Limited
+ke_bank79,16 - Nkrumah Road Branch ,Barclays Bank of Kenya Limited
+ke_bank80,17 - Garissa Branch ,Barclays Bank of Kenya Limited
+ke_bank81,18 - Nyamira Branch ,Barclays Bank of Kenya Limited
+ke_bank82,19 - Kilifi Branch ,Barclays Bank of Kenya Limited
+ke_bank83,20 - Office Park Westlands ,Barclays Bank of Kenya Limited
+ke_bank84,21 - Barclaycard Operations ,Barclays Bank of Kenya Limited
+ke_bank85,22 - Paymants And International Services ,Barclays Bank of Kenya Limited
+ke_bank86,23 - Gilgil Branch ,Barclays Bank of Kenya Limited
+ke_bank87,24 - Thika Road Mall,Barclays Bank of Kenya Limited
+ke_bank88,26 - Kakamega Branch ,Barclays Bank of Kenya Limited
+ke_bank89,27 - Nakuru East ,Barclays Bank of Kenya Limited
+ke_bank90,28 - Buruburu ,Barclays Bank of Kenya Limited
+ke_bank91,29 - Bomet ,Barclays Bank of Kenya Limited
+ke_bank92,30 - Nyeri Branch ,Barclays Bank of Kenya Limited
+ke_bank93,31 - Thika Branch ,Barclays Bank of Kenya Limited
+ke_bank94,32 - Port Mombasa ,Barclays Bank of Kenya Limited
+ke_bank95,33 - Gikomba ,Barclays Bank of Kenya Limited
+ke_bank96,34 - Kawangware ,Barclays Bank of Kenya Limited
+ke_bank97,35 - Mbale ,Barclays Bank of Kenya Limited
+ke_bank98,36 - Plaza Premier Centre ,Barclays Bank of Kenya Limited
+ke_bank99,37 - River Road Branch ,Barclays Bank of Kenya Limited
+ke_bank100,38 - Chomba House-river Road ,Barclays Bank of Kenya Limited
+ke_bank101,39 - Mumias Branch ,Barclays Bank of Kenya Limited
+ke_bank102,40 - Machakos Branch ,Barclays Bank of Kenya Limited
+ke_bank103,41 - Narok Branch ,Barclays Bank of Kenya Limited
+ke_bank104,42 - Isiolo Branch ,Barclays Bank of Kenya Limited
+ke_bank105,43 - Ngong Branch ,Barclays Bank of Kenya Limited
+ke_bank106,44 - Maua Branch ,Barclays Bank of Kenya Limited
+ke_bank107,45 - Hurlingham Branch ,Barclays Bank of Kenya Limited
+ke_bank108,46 - Makupa Branch ,Barclays Bank of Kenya Limited
+ke_bank109,47 - Development House Branch ,Barclays Bank of Kenya Limited
+ke_bank110,48 - Bungoma ,Barclays Bank of Kenya Limited
+ke_bank111,49 - Lavington Branch ,Barclays Bank of Kenya Limited
+ke_bank112,50 - Tala ,Barclays Bank of Kenya Limited
+ke_bank113,51 - Homa Bay Branch ,Barclays Bank of Kenya Limited
+ke_bank114,52 - Ongata Rongai Branch ,Barclays Bank of Kenya Limited
+ke_bank115,53 - Othaya Branch ,Barclays Bank of Kenya Limited
+ke_bank116,54 - Voi Branch ,Barclays Bank of Kenya Limited
+ke_bank117,55 - Muthaiga Branch ,Barclays Bank of Kenya Limited
+ke_bank118,56 - Barclays Advisory And Reg. Services ,Barclays Bank of Kenya Limited
+ke_bank119,57 - Githunguri Branch ,Barclays Bank of Kenya Limited
+ke_bank120,58 - Webuye Branch ,Barclays Bank of Kenya Limited
+ke_bank121,59 - Kasarani Branch ,Barclays Bank of Kenya Limited
+ke_bank122,60 - Chuka Branch ,Barclays Bank of Kenya Limited
+ke_bank123,61 - Nakumatt-westgate Branch ,Barclays Bank of Kenya Limited
+ke_bank124,62 - Kabarnet Branch ,Barclays Bank of Kenya Limited
+ke_bank125,63 - Kerugoya Branch ,Barclays Bank of Kenya Limited
+ke_bank126,64 - Taveta Branch ,Barclays Bank of Kenya Limited
+ke_bank127,65 - Karen Branch ,Barclays Bank of Kenya Limited
+ke_bank128,66 - Wundanyi Branch ,Barclays Bank of Kenya Limited
+ke_bank129,67 - Ruaraka Branch ,Barclays Bank of Kenya Limited
+ke_bank130,68 - Pamoja Branch ,Barclays Bank of Kenya Limited
+ke_bank131,69 - Wote Branch ,Barclays Bank of Kenya Limited
+ke_bank132,70 - Enterprise Road Branch ,Barclays Bank of Kenya Limited
+ke_bank133,71 - Nakumatt Meru Branch ,Barclays Bank of Kenya Limited
+ke_bank134,72 - Juja Branch ,Barclays Bank of Kenya Limited
+ke_bank135,73 - Westlands Branch ,Barclays Bank of Kenya Limited
+ke_bank136,74 - Kikuyu Branch ,Barclays Bank of Kenya Limited
+ke_bank137,75 - Moi Avenue-nairobi Branch ,Barclays Bank of Kenya Limited
+ke_bank138,76 - Kenyatta Avenue ,Barclays Bank of Kenya Limited
+ke_bank139,77 - Barcalys Plaza Corporate Service Centre ,Barclays Bank of Kenya Limited
+ke_bank140,78 - Kiriaini Branch ,Barclays Bank of Kenya Limited
+ke_bank141,79 - Butere Road Branch ,Barclays Bank of Kenya Limited
+ke_bank142,80 - Migori Branch ,Barclays Bank of Kenya Limited
+ke_bank143,81 - Digo Branch ,Barclays Bank of Kenya Limited
+ke_bank144,82 - Haile Selassie Avenue Branch ,Barclays Bank of Kenya Limited
+ke_bank145,83 - Nairobi University Branch ,Barclays Bank of Kenya Limited
+ke_bank146,84 - Bunyala Road ,Barclays Bank of Kenya Limited
+ke_bank147,86 - Nairobi West Branch ,Barclays Bank of Kenya Limited
+ke_bank148,87 - Parklands ,Barclays Bank of Kenya Limited
+ke_bank149,88 - Busia ,Barclays Bank of Kenya Limited
+ke_bank150,89 - Pangani Branch ,Barclays Bank of Kenya Limited
+ke_bank151,90 - Abc Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank152,93 - Kariobangi Branch ,Barclays Bank of Kenya Limited
+ke_bank153,94 - Queensway House Branch ,Barclays Bank of Kenya Limited
+ke_bank154,95 - Nakumatt Embakasi Branch ,Barclays Bank of Kenya Limited
+ke_bank155,96 - Barclays Merchant Finance Ltd. ,Barclays Bank of Kenya Limited
+ke_bank156,97 - Barclays Securities Services (k ,Barclays Bank of Kenya Limited
+ke_bank157,100 - Diani Branch ,Barclays Bank of Kenya Limited
+ke_bank158,103 - Nairobi J.k.i.a Branch ,Barclays Bank of Kenya Limited
+ke_bank159,105 - Village Market - Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank160,106 - Sarit Centre - Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank161,109 - Yaya Centre- Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank162,111 - Naivasha Branch ,Barclays Bank of Kenya Limited
+ke_bank163,113 - Market Branch ,Barclays Bank of Kenya Limited
+ke_bank164,114 - Changamwe Branch ,Barclays Bank of Kenya Limited
+ke_bank165,117 - Rahimtulla Trust Towers - Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank166,125 - Nakuru West Branch ,Barclays Bank of Kenya Limited
+ke_bank167,128 - Bamburi Branch ,Barclays Bank of Kenya Limited
+ke_bank168,130 - Harambee Ave - Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank169,132 - Kitale Branch ,Barclays Bank of Kenya Limited
+ke_bank170,139 - Nyahururu Branch ,Barclays Bank of Kenya Limited
+ke_bank171,144 - Treasury Operations,Barclays Bank of Kenya Limited
+ke_bank172,145 - Moi Avenue Mombasa -  Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank173,151 - Cash Monitoring Unit ,Barclays Bank of Kenya Limited
+ke_bank174,190 - Nanyuki Branch ,Barclays Bank of Kenya Limited
+ke_bank175,206 - Karatina Branch ,Barclays Bank of Kenya Limited
+ke_bank176,220 - Mombasa Nyerere Ave -  Premier Life Centre ,Barclays Bank of Kenya Limited
+ke_bank177,273 - Consumer Operations ,Barclays Bank of Kenya Limited
+ke_bank178,300 - Finance Department ,Barclays Bank of Kenya Limited
+ke_bank179,337 - Documents And Securities  Dsc ,Barclays Bank of Kenya Limited
+ke_bank180,340 - Retail Credit Team ,Barclays Bank of Kenya Limited
+ke_bank181,354 - Credit Operations ,Barclays Bank of Kenya Limited
+ke_bank182,400 - Head office,Barclays Bank of Kenya Limited
+ke_bank183,0 - CFC Stanbic Head Office,CFC Stanbic Bank Kenya Limited
+ke_bank184,2 - Kenyatta Ave ,CFC Stanbic Bank Kenya Limited
+ke_bank185,3 - Digo road,CFC Stanbic Bank Kenya Limited
+ke_bank186,4 - Waiyaki Way ,CFC Stanbic Bank Kenya Limited
+ke_bank187,5 - Industrial Area ,CFC Stanbic Bank Kenya Limited
+ke_bank188,6 - Harambee Avenue ,CFC Stanbic Bank Kenya Limited
+ke_bank189,7 - Chiromo Road ,CFC Stanbic Bank Kenya Limited
+ke_bank190,8 - International House ,CFC Stanbic Bank Kenya Limited
+ke_bank191,10 - Upper Hill ,CFC Stanbic Bank Kenya Limited
+ke_bank192,11 - Naivasha ,CFC Stanbic Bank Kenya Limited
+ke_bank193,12 - Wesgate ,CFC Stanbic Bank Kenya Limited
+ke_bank194,13 - Kisumu ,CFC Stanbic Bank Kenya Limited
+ke_bank195,14 - Nakuru ,CFC Stanbic Bank Kenya Limited
+ke_bank196,15 - Thika ,CFC Stanbic Bank Kenya Limited
+ke_bank197,17 - Nanyuki ,CFC Stanbic Bank Kenya Limited
+ke_bank198,18 - Meru,CFC Stanbic Bank Kenya Limited
+ke_bank199,19 - Buruburu,CFC Stanbic Bank Kenya Limited
+ke_bank200,20 - Gikomba,CFC Stanbic Bank Kenya Limited
+ke_bank201,21 - Garden city,CFC Stanbic Bank Kenya Limited
+ke_bank202,22 - ELDORET,CFC Stanbic Bank Kenya Limited
+ke_bank203,23 - KAREN,CFC Stanbic Bank Kenya Limited
+ke_bank204,24 - Kisii,CFC Stanbic Bank Kenya Limited
+ke_bank205,25 - Warwick,CFC Stanbic Bank Kenya Limited
+ke_bank206,26 - Private Clients,CFC Stanbic Bank Kenya Limited
+ke_bank207,27 - Nyali,CFC Stanbic Bank Kenya Limited
+ke_bank208,28 - Malindi,CFC Stanbic Bank Kenya Limited
+ke_bank209,999 - Central Processing H/o ,CFC Stanbic Bank Kenya Limited
+ke_bank210,0 - Head Office,Chase Bank Limited
+ke_bank211,1 - City Centre Branch,Chase Bank Limited
+ke_bank212,3 - Village Market ,Chase Bank Limited
+ke_bank213,4 - Mombasa Moi Avenue,Chase Bank Limited
+ke_bank214,5 - Hurlingham ,Chase Bank Limited
+ke_bank215,6 - Eastleigh ,Chase Bank Limited
+ke_bank216,7 - Parklands ,Chase Bank Limited
+ke_bank217,8 - Riverside Mews ,Chase Bank Limited
+ke_bank218,10 - Thika ,Chase Bank Limited
+ke_bank219,11 - Nakuru ,Chase Bank Limited
+ke_bank220,12 - Donholm ,Chase Bank Limited
+ke_bank221,13 - Bondeni Chase Iman ,Chase Bank Limited
+ke_bank222,14 - Ngara Mini ,Chase Bank Limited
+ke_bank223,15 - Kisumu ,Chase Bank Limited
+ke_bank224,16 - Eldoret,Chase Bank Limited
+ke_bank225,17 - Diamond Plaza,Chase Bank Limited
+ke_bank226,18 - Windsor,Chase Bank Limited
+ke_bank227,19 - Malindi,Chase Bank Limited
+ke_bank228,20 - Embakasi,Chase Bank Limited
+ke_bank229,21 - Upper Hill,Chase Bank Limited
+ke_bank230,22 - Nyali,Chase Bank Limited
+ke_bank231,23 - Buru Buru,Chase Bank Limited
+ke_bank232,24 - Strathmore,Chase Bank Limited
+ke_bank233,25 - Kisii,Chase Bank Limited
+ke_bank234,26 - Virtual ,Chase Bank Limited
+ke_bank235,27 - Rafiki DTM Clearing Center,Chase Bank Limited
+ke_bank236,28 - Chase Xpress - Ngong Road,Chase Bank Limited
+ke_bank237,29 - Chase Elite ABC Place,Chase Bank Limited
+ke_bank238,30 - Sameer Business Park,Chase Bank Limited
+ke_bank239,31 - Mtwapa,Chase Bank Limited
+ke_bank240,32 - Ongata Rongai ,Chase Bank Limited
+ke_bank241,33 - Westlands,Chase Bank Limited
+ke_bank242,34 - Machakos,Chase Bank Limited
+ke_bank243,35 - Mombasa Old Town,Chase Bank Limited
+ke_bank244,36 - River Road,Chase Bank Limited
+ke_bank245,37 - Lunga Lunga,Chase Bank Limited
+ke_bank246,38 - Chase Xpress Dagoretti Corner,Chase Bank Limited
+ke_bank247,39 - Chase Xpress Madaraka Corner,Chase Bank Limited
+ke_bank248,40 - Kitale,Chase Bank Limited
+ke_bank249,41 - Kimathi,Chase Bank Limited
+ke_bank250,42 - Narok,Chase Bank Limited
+ke_bank251,43 - SACCO Processing Centre,Chase Bank Limited
+ke_bank252,44 - Garissa,Chase Bank Limited
+ke_bank253,45 - KPA,Chase Bank Limited
+ke_bank254,46 - Lavington,Chase Bank Limited
+ke_bank255,47 - Kericho,Chase Bank Limited
+ke_bank256,48 - Karen,Chase Bank Limited
+ke_bank257,49 - Kilimani,Chase Bank Limited
+ke_bank258,50 - Kasuku Centre,Chase Bank Limited
+ke_bank259,51 - Kilifi,Chase Bank Limited
+ke_bank260,52 - Kisumu Naivas,Chase Bank Limited
+ke_bank261,53 - Ruaka,Chase Bank Limited
+ke_bank262,54 - Garden City,Chase Bank Limited
+ke_bank263,"0 - Head Office , Nairobi ",CITIBANK
+ke_bank264,400 - Mombasa ,CITIBANK
+ke_bank265,500 - Gigiri Agency ,CITIBANK
+ke_bank266,700 - Kisumu ,CITIBANK
+ke_bank267,0 - Head Office,Commercial Bank of Africa Limited
+ke_bank268,1 - Upper Hill,Commercial Bank of Africa Limited
+ke_bank269,2 - Wabera Street,Commercial Bank of Africa Limited
+ke_bank270,3 - Mama Ngina,Commercial Bank of Africa Limited
+ke_bank271,4 - Westlands Branch,Commercial Bank of Africa Limited
+ke_bank272,5 - Industrial Area ,Commercial Bank of Africa Limited
+ke_bank273,6 - Mamlaka,Commercial Bank of Africa Limited
+ke_bank274,7 - Village Market,Commercial Bank of Africa Limited
+ke_bank275,8 - Cargo Centre,Commercial Bank of Africa Limited
+ke_bank276,9 - Park Side,Commercial Bank of Africa Limited
+ke_bank277,16 - Galleria Mall ,Commercial Bank of Africa Limited
+ke_bank278,17 - Junction,Commercial Bank of Africa Limited
+ke_bank279,18 - Thika Road Mall,Commercial Bank of Africa Limited
+ke_bank280,19 - Greenspan Mall,Commercial Bank of Africa Limited
+ke_bank281,20 - Moi Avenue Mombasa ,Commercial Bank of Africa Limited
+ke_bank282,21 - Meru,Commercial Bank of Africa Limited
+ke_bank283,22 - Nakuru,Commercial Bank of Africa Limited
+ke_bank284,23 - Bamburi,Commercial Bank of Africa Limited
+ke_bank285,24 - Diani,Commercial Bank of Africa Limited
+ke_bank286,25 - Changamwe,Commercial Bank of Africa Limited
+ke_bank287,26 - Eldoret,Commercial Bank of Africa Limited
+ke_bank288,27 - Kisumu,Commercial Bank of Africa Limited
+ke_bank289,28 - Thika,Commercial Bank of Africa Limited
+ke_bank290,29 - Nanyuki,Commercial Bank of Africa Limited
+ke_bank291,30 - Yaya Centre,Commercial Bank of Africa Limited
+ke_bank292,31 - Lavington,Commercial Bank of Africa Limited
+ke_bank293,32 - Machakos,Commercial Bank of Africa Limited
+ke_bank294,0 - Harambee Avenue ,Consolidated Bank of Kenya Limited
+ke_bank295,1 - Muranga ,Consolidated Bank of Kenya Limited
+ke_bank296,2 - Embu ,Consolidated Bank of Kenya Limited
+ke_bank297,3 - Mombasa ,Consolidated Bank of Kenya Limited
+ke_bank298,4 - Koinange Street ,Consolidated Bank of Kenya Limited
+ke_bank299,5 - Thika ,Consolidated Bank of Kenya Limited
+ke_bank300,6 - Meru ,Consolidated Bank of Kenya Limited
+ke_bank301,7 - Nyeri ,Consolidated Bank of Kenya Limited
+ke_bank302,8 - Laare,Consolidated Bank of Kenya Limited
+ke_bank303,9 - Maua ,Consolidated Bank of Kenya Limited
+ke_bank304,10 - Isiolo ,Consolidated Bank of Kenya Limited
+ke_bank305,11 - Head Office ,Consolidated Bank of Kenya Limited
+ke_bank306,12 - Corporate,Consolidated Bank of Kenya Limited
+ke_bank307,13 - Umoja ,Consolidated Bank of Kenya Limited
+ke_bank308,14 - River Road ,Consolidated Bank of Kenya Limited
+ke_bank309,15 - Eldoret,Consolidated Bank of Kenya Limited
+ke_bank310,16 - Nakuru,Consolidated Bank of Kenya Limited
+ke_bank311,17 - Kitengela,Consolidated Bank of Kenya Limited
+ke_bank312,18 - Taj Mall,Consolidated Bank of Kenya Limited
+ke_bank313,0 - Head Office,Credit Bank Limited
+ke_bank314,1 - Koinange Street,Credit Bank Limited
+ke_bank315,2 - Kisumu,Credit Bank Limited
+ke_bank316,3 - Nakuru,Credit Bank Limited
+ke_bank317,4 - Kisii,Credit Bank Limited
+ke_bank318,5 - Westlands ,Credit Bank Limited
+ke_bank319,6 - Industrial Area ,Credit Bank Limited
+ke_bank320,"8 - Nakuru, Kenyatta Avenue",Credit Bank Limited
+ke_bank321,9 - Eldoret,Credit Bank Limited
+ke_bank322,10 - Rongai,Credit Bank Limited
+ke_bank323,11 - Mombasa- Nyali Centre,Credit Bank Limited
+ke_bank324,12 - Thika,Credit Bank Limited
+ke_bank325,13 - Lavington Mall,Credit Bank Limited
+ke_bank326,14 - Machakos,Credit Bank Limited
+ke_bank327,15 - Kitengela,Credit Bank Limited
+ke_bank328,0 - Head Office ,Diamond Trust Bank Limited
+ke_bank329,1 - Nation Centre ,Diamond Trust Bank Limited
+ke_bank330,2 - Mombasa ,Diamond Trust Bank Limited
+ke_bank331,3 - Kisumu ,Diamond Trust Bank Limited
+ke_bank332,5 - Parklands ,Diamond Trust Bank Limited
+ke_bank333,6 - Westgate ,Diamond Trust Bank Limited
+ke_bank334,8 - Mombasa Rd ,Diamond Trust Bank Limited
+ke_bank335,9 - Ind Area ,Diamond Trust Bank Limited
+ke_bank336,10 - Kisii ,Diamond Trust Bank Limited
+ke_bank337,11 - Malindi ,Diamond Trust Bank Limited
+ke_bank338,12 - Thika ,Diamond Trust Bank Limited
+ke_bank339,13 - Otc ,Diamond Trust Bank Limited
+ke_bank340,14 - Eldoret ,Diamond Trust Bank Limited
+ke_bank341,15 - Eastleigh ,Diamond Trust Bank Limited
+ke_bank342,16 - Changamwe ,Diamond Trust Bank Limited
+ke_bank343,17 - T-mall ,Diamond Trust Bank Limited
+ke_bank344,18 - Nakuru ,Diamond Trust Bank Limited
+ke_bank345,19 - Village Market ,Diamond Trust Bank Limited
+ke_bank346,20 - Diani ,Diamond Trust Bank Limited
+ke_bank347,21 - Bungoma ,Diamond Trust Bank Limited
+ke_bank348,22 - Kitale ,Diamond Trust Bank Limited
+ke_bank349,23 - Prestige ,Diamond Trust Bank Limited
+ke_bank350,24 - Buru Buru ,Diamond Trust Bank Limited
+ke_bank351,25 - Kitengela ,Diamond Trust Bank Limited
+ke_bank352,26 - Jomo Kenyatta Branch ,Diamond Trust Bank Limited
+ke_bank353,27 - Kakamega ,Diamond Trust Bank Limited
+ke_bank354,28 - Kericho ,Diamond Trust Bank Limited
+ke_bank355,29 - Upper Hill ,Diamond Trust Bank Limited
+ke_bank356,30 - Wabera Street ,Diamond Trust Bank Limited
+ke_bank357,31 - Karen ,Diamond Trust Bank Limited
+ke_bank358,32 - Voi ,Diamond Trust Bank Limited
+ke_bank359,33 - Shimanzi ,Diamond Trust Bank Limited
+ke_bank360,34 - Meru ,Diamond Trust Bank Limited
+ke_bank361,35 - Diamond Plaza ,Diamond Trust Bank Limited
+ke_bank362,36 - crossroad,Diamond Trust Bank Limited
+ke_bank363,37 - JKIA,Diamond Trust Bank Limited
+ke_bank364,38 - Nyali ,Diamond Trust Bank Limited
+ke_bank365,39 - Migori Branch,Diamond Trust Bank Limited
+ke_bank366,40 - Madina Mall,Diamond Trust Bank Limited
+ke_bank367,41 - Courtyard Branch,Diamond Trust Bank Limited
+ke_bank368,42 - Mtwapa Branch,Diamond Trust Bank Limited
+ke_bank369,43 - Lamu Branch,Diamond Trust Bank Limited
+ke_bank370,44 - Kilifi Branch,Diamond Trust Bank Limited
+ke_bank371,45 - Mariakani Branch,Diamond Trust Bank Limited
+ke_bank372,46 - Thika Road Mall,Diamond Trust Bank Limited
+ke_bank373,47 - Ronald Ngala,Diamond Trust Bank Limited
+ke_bank374,48 - Busia,Diamond Trust Bank Limited
+ke_bank375,49 - West End Mall - Kisumu,Diamond Trust Bank Limited
+ke_bank376,50 - Tom Mboya ,Diamond Trust Bank Limited
+ke_bank377,52 - DTB Centre,Diamond Trust Bank Limited
+ke_bank378,53 - South C,Diamond Trust Bank Limited
+ke_bank379,54 - Lavington,Diamond Trust Bank Limited
+ke_bank380,55 - 9 West,Diamond Trust Bank Limited
+ke_bank381,"56 - Biashara street, Nakuru",Diamond Trust Bank Limited
+ke_bank382,0 - Head Office ,Dubai Bank Kenya Limited
+ke_bank383,1 - Eastleigh ,Dubai Bank Kenya Limited
+ke_bank384,2 - Mombasa ,Dubai Bank Kenya Limited
+ke_bank385,3 - Mombasa ,Dubai Bank Kenya Limited
+ke_bank386,4 - Nakuru ,Dubai Bank Kenya Limited
+ke_bank387,20 - Nakuru ,Dubai Bank Kenya Limited
+ke_bank388,"0 - Fedha Branch , Head Office ",ECO Bank Limited
+ke_bank389,1 - Moi Avenue Nairobi ,ECO Bank Limited
+ke_bank390,2 - Akiba Hse Mombasa ,ECO Bank Limited
+ke_bank391,3 - Plaza 2000 ,ECO Bank Limited
+ke_bank392,4 - Westminister ,ECO Bank Limited
+ke_bank393,5 - Chambers ,ECO Bank Limited
+ke_bank394,6 - Thika ,ECO Bank Limited
+ke_bank395,7 - Eldoret ,ECO Bank Limited
+ke_bank396,8 - Kisumu ,ECO Bank Limited
+ke_bank397,9 - Kisii ,ECO Bank Limited
+ke_bank398,10 - Kitale ,ECO Bank Limited
+ke_bank399,11 - Industrial Area ,ECO Bank Limited
+ke_bank400,12 - Karatina ,ECO Bank Limited
+ke_bank401,13 - Westlands ,ECO Bank Limited
+ke_bank402,14 - United Mall ,ECO Bank Limited
+ke_bank403,15 - Nakuru ,ECO Bank Limited
+ke_bank404,16 - Jomo Kenyatta Avenue ,ECO Bank Limited
+ke_bank405,17 - Nyeri ,ECO Bank Limited
+ke_bank406,18 - Busia ,ECO Bank Limited
+ke_bank407,19 - Malindi ,ECO Bank Limited
+ke_bank408,20 - Meru,ECO Bank Limited
+ke_bank409,21 - Gikomba,ECO Bank Limited
+ke_bank410,22 - UpperHill,ECO Bank Limited
+ke_bank411,23 - Valley Arcade,ECO Bank Limited
+ke_bank412,24 - Karen,ECO Bank Limited
+ke_bank413,25 - Nyali Mombasa,ECO Bank Limited
+ke_bank414,26 - Ongata Rongai,ECO Bank Limited
+ke_bank415,27 - Embakasi,ECO Bank Limited
+ke_bank416,28 - Kitengela,ECO Bank Limited
+ke_bank417,29 - Thika Mall,ECO Bank Limited
+ke_bank418,100 - Head Office ,ECO Bank Limited
+ke_bank419,0 - Equity Bank Head Office ,Equity Bank Limited
+ke_bank420,1 - Equity Bank Corporate ,Equity Bank Limited
+ke_bank421,2 - Equity Bank Fourways ,Equity Bank Limited
+ke_bank422,3 - Kangema ,Equity Bank Limited
+ke_bank423,4 - Karatina ,Equity Bank Limited
+ke_bank424,5 - Kiriaini ,Equity Bank Limited
+ke_bank425,6 - Murarandia ,Equity Bank Limited
+ke_bank426,7 - Kangari ,Equity Bank Limited
+ke_bank427,8 - Othaya ,Equity Bank Limited
+ke_bank428,9 - Thika / Equity Plaza ,Equity Bank Limited
+ke_bank429,10 - Kerugoya ,Equity Bank Limited
+ke_bank430,11 - Nyeri ,Equity Bank Limited
+ke_bank431,12 - Tom Mboya ,Equity Bank Limited
+ke_bank432,13 - Nakuru ,Equity Bank Limited
+ke_bank433,14 - Meru ,Equity Bank Limited
+ke_bank434,15 - Mama Ngina ,Equity Bank Limited
+ke_bank435,16 - Nyahururu ,Equity Bank Limited
+ke_bank436,17 - Community ,Equity Bank Limited
+ke_bank437,18 - Community Corporate ,Equity Bank Limited
+ke_bank438,19 - Embu ,Equity Bank Limited
+ke_bank439,20 - Naivasha ,Equity Bank Limited
+ke_bank440,21 - Chuka ,Equity Bank Limited
+ke_bank441,22 - Muranga ,Equity Bank Limited
+ke_bank442,23 - Molo ,Equity Bank Limited
+ke_bank443,24 - Harambee Avenu ,Equity Bank Limited
+ke_bank444,25 - Mombasa ,Equity Bank Limited
+ke_bank445,26 - Kimathi Street ,Equity Bank Limited
+ke_bank446,27 - Nanyuki ,Equity Bank Limited
+ke_bank447,28 - Kericho ,Equity Bank Limited
+ke_bank448,29 - Kisumu ,Equity Bank Limited
+ke_bank449,30 - Eldoret ,Equity Bank Limited
+ke_bank450,31 - Nakuru Kenyatta Avenue ,Equity Bank Limited
+ke_bank451,32 - Kariobangi ,Equity Bank Limited
+ke_bank452,33 - Kitale ,Equity Bank Limited
+ke_bank453,34 - Thika Kenyatta Avenue ,Equity Bank Limited
+ke_bank454,35 - Knut House ,Equity Bank Limited
+ke_bank455,36 - Narok ,Equity Bank Limited
+ke_bank456,37 - Nkubu ,Equity Bank Limited
+ke_bank457,38 - Mwea ,Equity Bank Limited
+ke_bank458,39 - Matuu ,Equity Bank Limited
+ke_bank459,40 - Maua ,Equity Bank Limited
+ke_bank460,41 - Isiolo ,Equity Bank Limited
+ke_bank461,42 - Kagio ,Equity Bank Limited
+ke_bank462,43 - Gikomba ,Equity Bank Limited
+ke_bank463,44 - Ukunda ,Equity Bank Limited
+ke_bank464,45 - Malindi ,Equity Bank Limited
+ke_bank465,46 - Mombasa Digo Road ,Equity Bank Limited
+ke_bank466,47 - Moi Avenue ,Equity Bank Limited
+ke_bank467,48 - Bungoma ,Equity Bank Limited
+ke_bank468,49 - Kapsabet ,Equity Bank Limited
+ke_bank469,50 - Kakamega ,Equity Bank Limited
+ke_bank470,51 - Kisii ,Equity Bank Limited
+ke_bank471,52 - Nyamira ,Equity Bank Limited
+ke_bank472,53 - Litein ,Equity Bank Limited
+ke_bank473,54 - Equity Centre Diaspora,Equity Bank Limited
+ke_bank474,55 - Westlands ,Equity Bank Limited
+ke_bank475,56 - Industrial Area Kenpipe Plaza ,Equity Bank Limited
+ke_bank476,57 - Kikuyu ,Equity Bank Limited
+ke_bank477,58 - Garissa ,Equity Bank Limited
+ke_bank478,59 - Mwingi ,Equity Bank Limited
+ke_bank479,60 - Machakos ,Equity Bank Limited
+ke_bank480,61 - Ongata Rongai ,Equity Bank Limited
+ke_bank481,62 - Ol-kalao ,Equity Bank Limited
+ke_bank482,63 - Kawangware ,Equity Bank Limited
+ke_bank483,64 - Kiambu ,Equity Bank Limited
+ke_bank484,65 - Kayole ,Equity Bank Limited
+ke_bank485,66 - Gatundu ,Equity Bank Limited
+ke_bank486,67 - Wote ,Equity Bank Limited
+ke_bank487,68 - Mumias ,Equity Bank Limited
+ke_bank488,69 - Limuru ,Equity Bank Limited
+ke_bank489,70 - Kitengela ,Equity Bank Limited
+ke_bank490,71 - Githurai ,Equity Bank Limited
+ke_bank491,72 - Kitui ,Equity Bank Limited
+ke_bank492,73 - Ngong ,Equity Bank Limited
+ke_bank493,74 - Loitoktok ,Equity Bank Limited
+ke_bank494,75 - Bondo ,Equity Bank Limited
+ke_bank495,76 - Mbita ,Equity Bank Limited
+ke_bank496,77 - Gilgil ,Equity Bank Limited
+ke_bank497,78 - Busia ,Equity Bank Limited
+ke_bank498,79 - Voi ,Equity Bank Limited
+ke_bank499,80 - Enterprise Road ,Equity Bank Limited
+ke_bank500,81 - Equity Centre ,Equity Bank Limited
+ke_bank501,82 - Donholm ,Equity Bank Limited
+ke_bank502,83 - Mukurwe-ini ,Equity Bank Limited
+ke_bank503,84 - Eastleigh ,Equity Bank Limited
+ke_bank504,85 - Namanga ,Equity Bank Limited
+ke_bank505,86 - Kajiado ,Equity Bank Limited
+ke_bank506,87 - Ruiru ,Equity Bank Limited
+ke_bank507,88 - Otc ,Equity Bank Limited
+ke_bank508,89 - Kenol ,Equity Bank Limited
+ke_bank509,90 - Tala ,Equity Bank Limited
+ke_bank510,91 - Ngara ,Equity Bank Limited
+ke_bank511,92 - Nandi Hills ,Equity Bank Limited
+ke_bank512,93 - Githunguri ,Equity Bank Limited
+ke_bank513,94 - Tea Room ,Equity Bank Limited
+ke_bank514,95 - Buru Buru ,Equity Bank Limited
+ke_bank515,96 - Mbale ,Equity Bank Limited
+ke_bank516,97 - Siaya ,Equity Bank Limited
+ke_bank517,98 - Homa Bay ,Equity Bank Limited
+ke_bank518,99 - Lodwar ,Equity Bank Limited
+ke_bank519,100 - Mandera ,Equity Bank Limited
+ke_bank520,101 - Marsabit ,Equity Bank Limited
+ke_bank521,102 - Moyale ,Equity Bank Limited
+ke_bank522,103 - Wajir ,Equity Bank Limited
+ke_bank523,104 - Meru Makutano ,Equity Bank Limited
+ke_bank524,105 - Malaba Town ,Equity Bank Limited
+ke_bank525,106 - Kilifi ,Equity Bank Limited
+ke_bank526,107 - Kapenguria ,Equity Bank Limited
+ke_bank527,108 - Mombasa Road ,Equity Bank Limited
+ke_bank528,109 - Eldoret Market ,Equity Bank Limited
+ke_bank529,110 - Maralal ,Equity Bank Limited
+ke_bank530,111 - Kimende ,Equity Bank Limited
+ke_bank531,112 - Luanda ,Equity Bank Limited
+ke_bank532,113 - Ku Sub Branch ,Equity Bank Limited
+ke_bank533,114 - Kengeleni ,Equity Bank Limited
+ke_bank534,115 - Nyeri Kimathi Way ,Equity Bank Limited
+ke_bank535,116 - Migori ,Equity Bank Limited
+ke_bank536,117 - Kibera ,Equity Bank Limited
+ke_bank537,118 - Kasarani ,Equity Bank Limited
+ke_bank538,119 - Mtwapa ,Equity Bank Limited
+ke_bank539,120 - Changamwe ,Equity Bank Limited
+ke_bank540,121 - Hola ,Equity Bank Limited
+ke_bank541,122 - Bomet ,Equity Bank Limited
+ke_bank542,123 - Kilgoris ,Equity Bank Limited
+ke_bank543,124 - Keroka ,Equity Bank Limited
+ke_bank544,125 - KAREN,Equity Bank Limited
+ke_bank545,126 - KISUMU ANGAWA AVE,Equity Bank Limited
+ke_bank546,127 - MPEKETONI,Equity Bank Limited
+ke_bank547,128 - NAIROBI WEST,Equity Bank Limited
+ke_bank548,129 - KENYATTA AVENUE,Equity Bank Limited
+ke_bank549,130 - City Hall,Equity Bank Limited
+ke_bank550,131 - Eldama Ravine,Equity Bank Limited
+ke_bank551,132 - Embakasi,Equity Bank Limited
+ke_bank552,133 - KPCU,Equity Bank Limited
+ke_bank553,134 - Ridgeways,Equity Bank Limited
+ke_bank554,135 - Runyenjes Sub Branch,Equity Bank Limited
+ke_bank555,136 - Dadaad,Equity Bank Limited
+ke_bank556,137 - Kangemi,Equity Bank Limited
+ke_bank557,138 - Nyali Centre Corporate,Equity Bank Limited
+ke_bank558,139 - Kabarnet,Equity Bank Limited
+ke_bank559,140 - Westlands Corporate,Equity Bank Limited
+ke_bank560,141 - Lavington Corporate,Equity Bank Limited
+ke_bank561,142 - Taita Taveta,Equity Bank Limited
+ke_bank562,143 - Awendo,Equity Bank Limited
+ke_bank563,144 - Ruai,Equity Bank Limited
+ke_bank564,145 - Kilimani,Equity Bank Limited
+ke_bank565,146 - Nakuru Westside Mall,Equity Bank Limited
+ke_bank566,147 - Kilimani Supreme,Equity Bank Limited
+ke_bank567,148 - JKIA Cargo Centre,Equity Bank Limited
+ke_bank568,149 - EPZ Athi River,Equity Bank Limited
+ke_bank569,150 - Oyugis,Equity Bank Limited
+ke_bank570,151 - Mayfair Supreme Centre,Equity Bank Limited
+ke_bank571,152 - Juja,Equity Bank Limited
+ke_bank572,153 - Iten,Equity Bank Limited
+ke_bank573,154 - Nyali Supreme Centre,Equity Bank Limited
+ke_bank574,155 - Thika Supreme Centre,Equity Bank Limited
+ke_bank575,156 - Mombasa Supreme Centre,Equity Bank Limited
+ke_bank576,157 - Kapsowar Sub-Branch,Equity Bank Limited
+ke_bank577,158 - Kwale,Equity Bank Limited
+ke_bank578,159 - Lamu,Equity Bank Limited
+ke_bank579,160 - Kenyatta Avenue Supreme,Equity Bank Limited
+ke_bank580,161 - KPA Sub-Branch Mombasa,Equity Bank Limited
+ke_bank581,162 - Gigiri Supreme Centre,Equity Bank Limited
+ke_bank582,163 - Karen Supreme Centre,Equity Bank Limited
+ke_bank583,164 - Eldoret Supreme Centre,Equity Bank Limited
+ke_bank584,165 - Kakuma,Equity Bank Limited
+ke_bank585,166 - Archers Post ,Equity Bank Limited
+ke_bank586,167 - Mutomo,Equity Bank Limited
+ke_bank587,168 - Kiserian Sub Branch,Equity Bank Limited
+ke_bank588,169 - Dagoretti Corner,Equity Bank Limited
+ke_bank589,170 - Kisumu Supreme Centre,Equity Bank Limited
+ke_bank590,171 - Thika Makongeni,Equity Bank Limited
+ke_bank591,777 - Equity Hapo Hapo,Equity Bank Limited
+ke_bank592,0 - Head Office ,Family Bank Ltd
+ke_bank593,1 - Kiambu ,Family Bank Ltd
+ke_bank594,2 - Githunguri ,Family Bank Ltd
+ke_bank595,3 - Sonalux ,Family Bank Ltd
+ke_bank596,4 - Gatundu ,Family Bank Ltd
+ke_bank597,5 - Thika ,Family Bank Ltd
+ke_bank598,6 - Muranga ,Family Bank Ltd
+ke_bank599,7 - Kangari ,Family Bank Ltd
+ke_bank600,8 - Kiria-ini ,Family Bank Ltd
+ke_bank601,9 - Kangema ,Family Bank Ltd
+ke_bank602,11 - Othaya ,Family Bank Ltd
+ke_bank603,12 - Kenyatta Avenue ,Family Bank Ltd
+ke_bank604,14 - Cargen House ,Family Bank Ltd
+ke_bank605,15 - Laptrust,Family Bank Ltd
+ke_bank606,16 - City Hall Annex,Family Bank Ltd
+ke_bank607,17 - Kasarani,Family Bank Ltd
+ke_bank608,18 - Nakuru Finance House ,Family Bank Ltd
+ke_bank609,19 - Nakuru Market,Family Bank Ltd
+ke_bank610,21 - Dagoretti,Family Bank Ltd
+ke_bank611,22 - Kericho,Family Bank Ltd
+ke_bank612,23 - Nyahururu,Family Bank Ltd
+ke_bank613,24 - Ruiru ,Family Bank Ltd
+ke_bank614,25 - Kisumu Reliance,Family Bank Ltd
+ke_bank615,26 - Nyamira ,Family Bank Ltd
+ke_bank616,27 - Kisii ,Family Bank Ltd
+ke_bank617,28 - Kisumu Al Imran,Family Bank Ltd
+ke_bank618,29 - Narok,Family Bank Ltd
+ke_bank619,31 - Industrial Area ,Family Bank Ltd
+ke_bank620,32 - Thika Makongeni,Family Bank Ltd
+ke_bank621,33 - Donholm ,Family Bank Ltd
+ke_bank622,34 - Utawala,Family Bank Ltd
+ke_bank623,35 - Fourways Retail Branch,Family Bank Ltd
+ke_bank624,37 - Olkalou,Family Bank Ltd
+ke_bank625,38 - Ktda Plaza ,Family Bank Ltd
+ke_bank626,41 - Kariobangi ,Family Bank Ltd
+ke_bank627,42 - Gikomba Area 42,Family Bank Ltd
+ke_bank628,43 - Sokoni ,Family Bank Ltd
+ke_bank629,45 - Githurai ,Family Bank Ltd
+ke_bank630,46 - Yaya ,Family Bank Ltd
+ke_bank631,47 - Limuru ,Family Bank Ltd
+ke_bank632,48 - Westlands,Family Bank Ltd
+ke_bank633,49 - Kagwe,Family Bank Ltd
+ke_bank634,51 - Banana ,Family Bank Ltd
+ke_bank635,53 - Naivasha ,Family Bank Ltd
+ke_bank636,54 - Chuka,Family Bank Ltd
+ke_bank637,55 - Nyeri ,Family Bank Ltd
+ke_bank638,56 - Karatina,Family Bank Ltd
+ke_bank639,57 - Kerugoya ,Family Bank Ltd
+ke_bank640,58 - Tom Mboya ,Family Bank Ltd
+ke_bank641,59 - River Road ,Family Bank Ltd
+ke_bank642,61 - Kayole ,Family Bank Ltd
+ke_bank643,62 - Nkubu ,Family Bank Ltd
+ke_bank644,63 - Meru ,Family Bank Ltd
+ke_bank645,64 - Nanyuki,Family Bank Ltd
+ke_bank646,65 - Ktda Plaza Corporate ,Family Bank Ltd
+ke_bank647,66 - Ongata Rongai ,Family Bank Ltd
+ke_bank648,67 - Kajiado,Family Bank Ltd
+ke_bank649,68 - Fourways Corporate Branch ,Family Bank Ltd
+ke_bank650,69 - Ngara,Family Bank Ltd
+ke_bank651,71 - Kitengela ,Family Bank Ltd
+ke_bank652,72 - Kitui,Family Bank Ltd
+ke_bank653,73 - Mackakos ,Family Bank Ltd
+ke_bank654,74 - Migori,Family Bank Ltd
+ke_bank655,75 - Embu ,Family Bank Ltd
+ke_bank656,76 - Mwea,Family Bank Ltd
+ke_bank657,77 - Bungoma ,Family Bank Ltd
+ke_bank658,78 - Kakamega ,Family Bank Ltd
+ke_bank659,79 - Busia ,Family Bank Ltd
+ke_bank660,81 - Mumias,Family Bank Ltd
+ke_bank661,82 - Eldoret West,Family Bank Ltd
+ke_bank662,83 - Molo ,Family Bank Ltd
+ke_bank663,84 - Bomet,Family Bank Ltd
+ke_bank664,85 - Eldoret ,Family Bank Ltd
+ke_bank665,87 - Litein,Family Bank Ltd
+ke_bank666,89 - Bamburi,Family Bank Ltd
+ke_bank667,91 - Ukunda,Family Bank Ltd
+ke_bank668,92 - Digo,Family Bank Ltd
+ke_bank669,93 - Kitale ,Family Bank Ltd
+ke_bank670,94 - Mtwapa,Family Bank Ltd
+ke_bank671,95 - Mombasa Nkrumah Road,Family Bank Ltd
+ke_bank672,96 - Mombasa Jomo Kenyatta Avenue,Family Bank Ltd
+ke_bank673,97 - Kapsabet ,Family Bank Ltd
+ke_bank674,98 - Malindi,Family Bank Ltd
+ke_bank675,102 - Kikuyu,Family Bank Ltd
+ke_bank676,0 - Head Office,Fina Bank Limited
+ke_bank677,1 - Kimathi Street,Fina Bank Limited
+ke_bank678,2 - Ind Area ,Fina Bank Limited
+ke_bank679,3 - Westlands ,Fina Bank Limited
+ke_bank680,4 - Lavington ,Fina Bank Limited
+ke_bank681,"5 - Nkrumah Road , Mombasa ",Fina Bank Limited
+ke_bank682,6 - Nakuru ,Fina Bank Limited
+ke_bank683,7 - Eldoret ,Fina Bank Limited
+ke_bank684,8 - Muthaiga ,Fina Bank Limited
+ke_bank685,9 - Nanyuki ,Fina Bank Limited
+ke_bank686,10 - Thika ,Fina Bank Limited
+ke_bank687,11 - Gikomba ,Fina Bank Limited
+ke_bank688,12 - Ngong Road ,Fina Bank Limited
+ke_bank689,13 - Meru ,Fina Bank Limited
+ke_bank690,14 - Nyali,Fina Bank Limited
+ke_bank691,1 - Wabera Street ,First Community Bank
+ke_bank692,2 - Eastleigh 1 ,First Community Bank
+ke_bank693,3 - Mombasa 1 ,First Community Bank
+ke_bank694,4 - Garissa ,First Community Bank
+ke_bank695,5 - Eastleigh 2 - General Waruinge ,First Community Bank
+ke_bank696,6 - Malindi ,First Community Bank
+ke_bank697,7 - Kisumu ,First Community Bank
+ke_bank698,8 - Kimathi Street ,First Community Bank
+ke_bank699,9 - Westlands ,First Community Bank
+ke_bank700,10 - South C ,First Community Bank
+ke_bank701,11 - Industrial Area ,First Community Bank
+ke_bank702,12 - Masalani ,First Community Bank
+ke_bank703,13 - Habasweni ,First Community Bank
+ke_bank704,14 - Wajir ,First Community Bank
+ke_bank705,15 - Moyale ,First Community Bank
+ke_bank706,16 - Nakuru ,First Community Bank
+ke_bank707,17 - Mombasa 2 ,First Community Bank
+ke_bank708,18 - Lunga Lunga,First Community Bank
+ke_bank709,999 - Head Office/clearing Center ,First Community Bank
+ke_bank710,0 - Banda,Giro Commercial Bank Limited
+ke_bank711,1 - Mombasa ,Giro Commercial Bank Limited
+ke_bank712,2 - Industrial Area ,Giro Commercial Bank Limited
+ke_bank713,3 - Kimathi St.,Giro Commercial Bank Limited
+ke_bank714,4 - Kisumu Branch ,Giro Commercial Bank Limited
+ke_bank715,5 - Westlands ,Giro Commercial Bank Limited
+ke_bank716,7 - Parklands 3rd Avenue ,Giro Commercial Bank Limited
+ke_bank717,1 - Head Office ,Guardian Bank Limited
+ke_bank718,2 - Westlands ,Guardian Bank Limited
+ke_bank719,3 - Mombasa ,Guardian Bank Limited
+ke_bank720,4 - Eldoret ,Guardian Bank Limited
+ke_bank721,5 - Kisumu ,Guardian Bank Limited
+ke_bank722,6 - Moi Ave ,Guardian Bank Limited
+ke_bank723,7 - Mombasa Road ,Guardian Bank Limited
+ke_bank724,8 - Nyali,Guardian Bank Limited
+ke_bank725,9 - Ngong Road,Guardian Bank Limited
+ke_bank726,10 - Nakuru,Guardian Bank Limited
+ke_bank727,0 - Head Office ,Gulf African Bank Ltd
+ke_bank728,1 - Central Clearing Centre ,Gulf African Bank Ltd
+ke_bank729,2 - Upperhill ,Gulf African Bank Ltd
+ke_bank730,3 - Eastleigh ,Gulf African Bank Ltd
+ke_bank731,4 - Kenyatta Avenue ,Gulf African Bank Ltd
+ke_bank732,5 - Mombasa ,Gulf African Bank Ltd
+ke_bank733,6 - Garissa ,Gulf African Bank Ltd
+ke_bank734,7 - Lamu ,Gulf African Bank Ltd
+ke_bank735,8 - Malindi ,Gulf African Bank Ltd
+ke_bank736,9 - Muthaiga ,Gulf African Bank Ltd
+ke_bank737,10 - Bondeni ,Gulf African Bank Ltd
+ke_bank738,11 - Eastleigh 7th Street,Gulf African Bank Ltd
+ke_bank739,12 - Eastleigh Athumani Kipanga Street,Gulf African Bank Ltd
+ke_bank740,13 - Westlands,Gulf African Bank Ltd
+ke_bank741,14 - Industrial Area,Gulf African Bank Ltd
+ke_bank742,15 - Jomo Kenyatta Avenue,Gulf African Bank Ltd
+ke_bank743,16 - Bombululu,Gulf African Bank Ltd
+ke_bank744,17 - Mombasa Road,Gulf African Bank Ltd
+ke_bank745,46 - Mombasa ,Habib Bank Limited
+ke_bank746,47 - Malindi ,Habib Bank Limited
+ke_bank747,48 - Kimathi Street ,Habib Bank Limited
+ke_bank748,49 - Kenyatta Avenue ,Habib Bank Limited
+ke_bank749,86 - Kisumu ,Habib Bank Limited
+ke_bank750,108 - Industrial Area,Habib Bank Limited
+ke_bank751,109 - HBL Westlands,Habib Bank Limited
+ke_bank752,16 - Kitengela,Housing Finance Bank
+ke_bank753,17 - Naivasha,Housing Finance Bank
+ke_bank754,100 - Head Office,Housing Finance Bank
+ke_bank755,200 - Rehani House,Housing Finance Bank
+ke_bank756,210 - Kenyatta Market,Housing Finance Bank
+ke_bank757,220 - Gill House,Housing Finance Bank
+ke_bank758,230 - Buru Buru,Housing Finance Bank
+ke_bank759,260 - Thika Road Mall,Housing Finance Bank
+ke_bank760,270 - Sameer Business Park,Housing Finance Bank
+ke_bank761,280 - Westlands,Housing Finance Bank
+ke_bank762,300 - Mombasa,Housing Finance Bank
+ke_bank763,310 - Nyali ,Housing Finance Bank
+ke_bank764,400 - Nakuru,Housing Finance Bank
+ke_bank765,410 - Eldoret,Housing Finance Bank
+ke_bank766,500 - Thika,Housing Finance Bank
+ke_bank767,510 - Nyeri,Housing Finance Bank
+ke_bank768,520 - Meru,Housing Finance Bank
+ke_bank769,600 - Kisumu,Housing Finance Bank
+ke_bank770,0 - Kenyatta Avenue ,I&M Bank Limited
+ke_bank771,1 - 2nd Nong Avenue ,I&M Bank Limited
+ke_bank772,2 - Sarit Centre ,I&M Bank Limited
+ke_bank773,3 - Head Office ,I&M Bank Limited
+ke_bank774,4 - Biashara St ,I&M Bank Limited
+ke_bank775,5 - Mombasa ,I&M Bank Limited
+ke_bank776,6 - Industrial Area ,I&M Bank Limited
+ke_bank777,7 - Kisumu ,I&M Bank Limited
+ke_bank778,8 - Karen ,I&M Bank Limited
+ke_bank779,9 - Panari Centre ,I&M Bank Limited
+ke_bank780,10 - Parklands ,I&M Bank Limited
+ke_bank781,11 - Wilson Airport ,I&M Bank Limited
+ke_bank782,12 - Ongata Rongai ,I&M Bank Limited
+ke_bank783,13 - South C Shopping Centre ,I&M Bank Limited
+ke_bank784,14 - Nyali Cinemax ,I&M Bank Limited
+ke_bank785,15 - Langata Link ,I&M Bank Limited
+ke_bank786,16 - Lavington ,I&M Bank Limited
+ke_bank787,17 - Eldoret ,I&M Bank Limited
+ke_bank788,18 - NAKURU,I&M Bank Limited
+ke_bank789,19 - Riversid Drive Branch,I&M Bank Limited
+ke_bank790,20 - Kisii,I&M Bank Limited
+ke_bank791,21 - Changamwe,I&M Bank Limited
+ke_bank792,22 - Malindi,I&M Bank Limited
+ke_bank793,23 - Nyeri,I&M Bank Limited
+ke_bank794,24 - Thika,I&M Bank Limited
+ke_bank795,25 - Gigiri,I&M Bank Limited
+ke_bank796,26 - Mtwapa,I&M Bank Limited
+ke_bank797,27 - Lavington Mall,I&M Bank Limited
+ke_bank798,28 - Kitale,I&M Bank Limited
+ke_bank799,29 - Lunga Lunga,I&M Bank Limited
+ke_bank800,30 - Yaya Centre,I&M Bank Limited
+ke_bank801,"31 - Gateway Mall, Syokimau",I&M Bank Limited
+ke_bank802,32 - Garden City Mall,I&M Bank Limited
+ke_bank803,98 - Card Center ,I&M Bank Limited
+ke_bank804,0 - Head Office ,Jamii Bora Bank
+ke_bank805,1 - Koinange Street,Jamii Bora Bank
+ke_bank806,100 - Kiongozi,Jamii Bora Bank
+ke_bank807,101 - Kayole,Jamii Bora Bank
+ke_bank808,102 - Eastleigh,Jamii Bora Bank
+ke_bank809,105 - Kawangware,Jamii Bora Bank
+ke_bank810,106 - Kibera,Jamii Bora Bank
+ke_bank811,107 - Kariobangi,Jamii Bora Bank
+ke_bank812,111 - Central Clearing Center,Jamii Bora Bank
+ke_bank813,114 - Funzi Road,Jamii Bora Bank
+ke_bank814,115 - Ngong Road,Jamii Bora Bank
+ke_bank815,116 - Kirinyaga Road,Jamii Bora Bank
+ke_bank816,209 - Machakos,Jamii Bora Bank
+ke_bank817,210 - Mtwapa,Jamii Bora Bank
+ke_bank818,213 - Kiritiri,Jamii Bora Bank
+ke_bank819,301 - Thika,Jamii Bora Bank
+ke_bank820,303 - Muranga ,Jamii Bora Bank
+ke_bank821,306 - Kikuyu,Jamii Bora Bank
+ke_bank822,307 - Banana,Jamii Bora Bank
+ke_bank823,310 - Utawala,Jamii Bora Bank
+ke_bank824,316 - Nyeri,Jamii Bora Bank
+ke_bank825,402 - Kisumu,Jamii Bora Bank
+ke_bank826,502 - Ongata Rongai,Jamii Bora Bank
+ke_bank827,503 - Kitengela,Jamii Bora Bank
+ke_bank828,507 - Nakuru,Jamii Bora Bank
+ke_bank829,603 - Mombasa,Jamii Bora Bank
+ke_bank830,0 - Head Office,K-Rep Bank Limited
+ke_bank831,1 - Main Office,K-Rep Bank Limited
+ke_bank832,2 - Mombasa,K-Rep Bank Limited
+ke_bank833,3 - Kenyatta Ave Nbi,K-Rep Bank Limited
+ke_bank834,4 - Nakuru,K-Rep Bank Limited
+ke_bank835,5 - Nyeri,K-Rep Bank Limited
+ke_bank836,6 - Buruburu,K-Rep Bank Limited
+ke_bank837,7 - Embu,K-Rep Bank Limited
+ke_bank838,8 - Eldoret,K-Rep Bank Limited
+ke_bank839,9 - Kisumu,K-Rep Bank Limited
+ke_bank840,10 - Kericho,K-Rep Bank Limited
+ke_bank841,11 - Mlolongo,K-Rep Bank Limited
+ke_bank842,12 - Thika,K-Rep Bank Limited
+ke_bank843,13 - Kerugoya,K-Rep Bank Limited
+ke_bank844,14 - Kenyatta Market,K-Rep Bank Limited
+ke_bank845,15 - Kisii,K-Rep Bank Limited
+ke_bank846,16 - CHUKA,K-Rep Bank Limited
+ke_bank847,17 - Kitui,K-Rep Bank Limited
+ke_bank848,18 - Machakos,K-Rep Bank Limited
+ke_bank849,19 - Nanyuki,K-Rep Bank Limited
+ke_bank850,20 - Kangemi,K-Rep Bank Limited
+ke_bank851,21 - Email,K-Rep Bank Limited
+ke_bank852,22 - Naivasha,K-Rep Bank Limited
+ke_bank853,23 - Nyahururu,K-Rep Bank Limited
+ke_bank854,24 - Isiolo,K-Rep Bank Limited
+ke_bank855,25 - Meru,K-Rep Bank Limited
+ke_bank856,26 - Kitale,K-Rep Bank Limited
+ke_bank857,27 - Kibwezi,K-Rep Bank Limited
+ke_bank858,28 - Bungoma,K-Rep Bank Limited
+ke_bank859,29 - Kajiado,K-Rep Bank Limited
+ke_bank860,30 - Nkubu,K-Rep Bank Limited
+ke_bank861,31 - Mtwapa,K-Rep Bank Limited
+ke_bank862,32 - Busia,K-Rep Bank Limited
+ke_bank863,33 - Moi Nbi,K-Rep Bank Limited
+ke_bank864,34 - Mwea,K-Rep Bank Limited
+ke_bank865,35 - Kengeleni,K-Rep Bank Limited
+ke_bank866,36 - Kilimani,K-Rep Bank Limited
+ke_bank867,37 - Rongai,K-Rep Bank Limited
+ke_bank868,91 - Eastleigh ,Kenya Commercial Bank Limited
+ke_bank869,92 - KCB CPC,Kenya Commercial Bank Limited
+ke_bank870,94 - Head Office ,Kenya Commercial Bank Limited
+ke_bank871,95 - Wote ,Kenya Commercial Bank Limited
+ke_bank872,96 - Head Office Finance,Kenya Commercial Bank Limited
+ke_bank873,100 - Moi Avenue Nairobi ,Kenya Commercial Bank Limited
+ke_bank874,101 - Kipande House ,Kenya Commercial Bank Limited
+ke_bank875,102 - Treasury Sq Mombasa ,Kenya Commercial Bank Limited
+ke_bank876,103 - Nakuru ,Kenya Commercial Bank Limited
+ke_bank877,104 - Kicc ,Kenya Commercial Bank Limited
+ke_bank878,105 - Kisumu ,Kenya Commercial Bank Limited
+ke_bank879,106 - Kericho ,Kenya Commercial Bank Limited
+ke_bank880,107 - Tom Mboya ,Kenya Commercial Bank Limited
+ke_bank881,108 - Thika ,Kenya Commercial Bank Limited
+ke_bank882,109 - Eldoret ,Kenya Commercial Bank Limited
+ke_bank883,110 - Kakamega ,Kenya Commercial Bank Limited
+ke_bank884,111 - Kilindini Mombasa ,Kenya Commercial Bank Limited
+ke_bank885,112 - Nyeri ,Kenya Commercial Bank Limited
+ke_bank886,113 - Industrial Area Nairobi ,Kenya Commercial Bank Limited
+ke_bank887,114 - River Road ,Kenya Commercial Bank Limited
+ke_bank888,115 - Muranga ,Kenya Commercial Bank Limited
+ke_bank889,116 - Embu ,Kenya Commercial Bank Limited
+ke_bank890,117 - Kangema ,Kenya Commercial Bank Limited
+ke_bank891,119 - Kiambu ,Kenya Commercial Bank Limited
+ke_bank892,120 - Karatina ,Kenya Commercial Bank Limited
+ke_bank893,121 - Siaya ,Kenya Commercial Bank Limited
+ke_bank894,122 - Nyahururu ,Kenya Commercial Bank Limited
+ke_bank895,123 - Meru ,Kenya Commercial Bank Limited
+ke_bank896,124 - Mumias ,Kenya Commercial Bank Limited
+ke_bank897,125 - Nanyuki ,Kenya Commercial Bank Limited
+ke_bank898,127 - Moyale ,Kenya Commercial Bank Limited
+ke_bank899,129 - Kikuyu ,Kenya Commercial Bank Limited
+ke_bank900,130 - Tala ,Kenya Commercial Bank Limited
+ke_bank901,131 - Kajiado ,Kenya Commercial Bank Limited
+ke_bank902,133 - KCB Custody services,Kenya Commercial Bank Limited
+ke_bank903,134 - Matuu ,Kenya Commercial Bank Limited
+ke_bank904,135 - Kitui ,Kenya Commercial Bank Limited
+ke_bank905,136 - Mvita ,Kenya Commercial Bank Limited
+ke_bank906,137 - Jogoo Rd Nairobi ,Kenya Commercial Bank Limited
+ke_bank907,139 - Card Centre ,Kenya Commercial Bank Limited
+ke_bank908,140 - Marsabit ,Kenya Commercial Bank Limited
+ke_bank909,141 - Sarit Centre ,Kenya Commercial Bank Limited
+ke_bank910,142 - Loitokitok ,Kenya Commercial Bank Limited
+ke_bank911,143 - Nandi Hills ,Kenya Commercial Bank Limited
+ke_bank912,144 - Lodwar ,Kenya Commercial Bank Limited
+ke_bank913,145 - Un Gigiri ,Kenya Commercial Bank Limited
+ke_bank914,146 - Hola ,Kenya Commercial Bank Limited
+ke_bank915,147 - Ruiru ,Kenya Commercial Bank Limited
+ke_bank916,148 - Mwingi ,Kenya Commercial Bank Limited
+ke_bank917,149 - Kitale ,Kenya Commercial Bank Limited
+ke_bank918,150 - Mandera ,Kenya Commercial Bank Limited
+ke_bank919,151 - Kapenguria ,Kenya Commercial Bank Limited
+ke_bank920,152 - Kabarnet ,Kenya Commercial Bank Limited
+ke_bank921,153 - Wajir ,Kenya Commercial Bank Limited
+ke_bank922,154 - Maralal ,Kenya Commercial Bank Limited
+ke_bank923,155 - Limuru ,Kenya Commercial Bank Limited
+ke_bank924,157 - Ukunda ,Kenya Commercial Bank Limited
+ke_bank925,158 - Iten ,Kenya Commercial Bank Limited
+ke_bank926,159 - Gilgil ,Kenya Commercial Bank Limited
+ke_bank927,161 - Ongata Rongai ,Kenya Commercial Bank Limited
+ke_bank928,162 - Kitengela ,Kenya Commercial Bank Limited
+ke_bank929,163 - Eldama Ravine ,Kenya Commercial Bank Limited
+ke_bank930,164 - Kibwezi ,Kenya Commercial Bank Limited
+ke_bank931,166 - Kapsabet ,Kenya Commercial Bank Limited
+ke_bank932,167 - University Way ,Kenya Commercial Bank Limited
+ke_bank933,168 - KCB Eldoret West,Kenya Commercial Bank Limited
+ke_bank934,169 - Garissa ,Kenya Commercial Bank Limited
+ke_bank935,173 - Lamu ,Kenya Commercial Bank Limited
+ke_bank936,174 - Kilifi ,Kenya Commercial Bank Limited
+ke_bank937,175 - Milimani ,Kenya Commercial Bank Limited
+ke_bank938,176 - Nyamira ,Kenya Commercial Bank Limited
+ke_bank939,177 - Mukuruweini ,Kenya Commercial Bank Limited
+ke_bank940,180 - Village Market ,Kenya Commercial Bank Limited
+ke_bank941,181 - Bomet ,Kenya Commercial Bank Limited
+ke_bank942,183 - Mbale ,Kenya Commercial Bank Limited
+ke_bank943,184 - Narok ,Kenya Commercial Bank Limited
+ke_bank944,185 - Othaya ,Kenya Commercial Bank Limited
+ke_bank945,186 - Voi ,Kenya Commercial Bank Limited
+ke_bank946,188 - Webuye ,Kenya Commercial Bank Limited
+ke_bank947,189 - Sotik ,Kenya Commercial Bank Limited
+ke_bank948,190 - Naivasha ,Kenya Commercial Bank Limited
+ke_bank949,191 - Kisii ,Kenya Commercial Bank Limited
+ke_bank950,192 - Migori ,Kenya Commercial Bank Limited
+ke_bank951,193 - Githunguri ,Kenya Commercial Bank Limited
+ke_bank952,194 - Machakos ,Kenya Commercial Bank Limited
+ke_bank953,195 - Kerugoya ,Kenya Commercial Bank Limited
+ke_bank954,196 - Chuka ,Kenya Commercial Bank Limited
+ke_bank955,197 - Bungoma ,Kenya Commercial Bank Limited
+ke_bank956,198 - Wundanyi ,Kenya Commercial Bank Limited
+ke_bank957,199 - Malindi ,Kenya Commercial Bank Limited
+ke_bank958,201 - Capital Hill ,Kenya Commercial Bank Limited
+ke_bank959,202 - Karen ,Kenya Commercial Bank Limited
+ke_bank960,203 - Lokichogio ,Kenya Commercial Bank Limited
+ke_bank961,204 - Gateway Msa Road ,Kenya Commercial Bank Limited
+ke_bank962,205 - Buruburu ,Kenya Commercial Bank Limited
+ke_bank963,206 - Chogoria ,Kenya Commercial Bank Limited
+ke_bank964,207 - Kangare ,Kenya Commercial Bank Limited
+ke_bank965,208 - Kianyaga ,Kenya Commercial Bank Limited
+ke_bank966,209 - Nkubu ,Kenya Commercial Bank Limited
+ke_bank967,210 - Ol Kalou ,Kenya Commercial Bank Limited
+ke_bank968,211 - Makuyu ,Kenya Commercial Bank Limited
+ke_bank969,212 - Mwea ,Kenya Commercial Bank Limited
+ke_bank970,213 - Njambini ,Kenya Commercial Bank Limited
+ke_bank971,214 - Gatundu ,Kenya Commercial Bank Limited
+ke_bank972,215 - Emali ,Kenya Commercial Bank Limited
+ke_bank973,216 - Isiolo ,Kenya Commercial Bank Limited
+ke_bank974,217 - KCB Flamingo,Kenya Commercial Bank Limited
+ke_bank975,218 - Njoro ,Kenya Commercial Bank Limited
+ke_bank976,219 - Mutomo ,Kenya Commercial Bank Limited
+ke_bank977,220 - Mariakani ,Kenya Commercial Bank Limited
+ke_bank978,221 - Mpeketoni ,Kenya Commercial Bank Limited
+ke_bank979,222 - Mtitu Andei ,Kenya Commercial Bank Limited
+ke_bank980,223 - Mtwapa ,Kenya Commercial Bank Limited
+ke_bank981,224 - Taveta ,Kenya Commercial Bank Limited
+ke_bank982,225 - Kengeleni ,Kenya Commercial Bank Limited
+ke_bank983,226 - Garsen ,Kenya Commercial Bank Limited
+ke_bank984,227 - Watamu ,Kenya Commercial Bank Limited
+ke_bank985,228 - Bondo ,Kenya Commercial Bank Limited
+ke_bank986,229 - Busia ,Kenya Commercial Bank Limited
+ke_bank987,230 - Homa Bay ,Kenya Commercial Bank Limited
+ke_bank988,231 - Kapsowar ,Kenya Commercial Bank Limited
+ke_bank989,232 - Kehancha ,Kenya Commercial Bank Limited
+ke_bank990,233 - Keroka ,Kenya Commercial Bank Limited
+ke_bank991,234 - Kilgoris ,Kenya Commercial Bank Limited
+ke_bank992,235 - Kimilili ,Kenya Commercial Bank Limited
+ke_bank993,236 - Litein ,Kenya Commercial Bank Limited
+ke_bank994,237 - Londiani Branch ,Kenya Commercial Bank Limited
+ke_bank995,238 - Luanda ,Kenya Commercial Bank Limited
+ke_bank996,239 - Malaba ,Kenya Commercial Bank Limited
+ke_bank997,240 - Muhoroni ,Kenya Commercial Bank Limited
+ke_bank998,241 - Oyugis ,Kenya Commercial Bank Limited
+ke_bank999,242 - Ugunja ,Kenya Commercial Bank Limited
+ke_bank1000,243 - United Mall ,Kenya Commercial Bank Limited
+ke_bank1001,244 - Serem ,Kenya Commercial Bank Limited
+ke_bank1002,245 - Sondu ,Kenya Commercial Bank Limited
+ke_bank1003,246 - Kisumu West ,Kenya Commercial Bank Limited
+ke_bank1004,247 - Marigat ,Kenya Commercial Bank Limited
+ke_bank1005,248 - Mois Bridge ,Kenya Commercial Bank Limited
+ke_bank1006,249 - Mashariki ,Kenya Commercial Bank Limited
+ke_bank1007,250 - Naro Moro ,Kenya Commercial Bank Limited
+ke_bank1008,251 - Kiriaini ,Kenya Commercial Bank Limited
+ke_bank1009,252 - Egerton University ,Kenya Commercial Bank Limited
+ke_bank1010,253 - Maua ,Kenya Commercial Bank Limited
+ke_bank1011,254 - Kawangare ,Kenya Commercial Bank Limited
+ke_bank1012,255 - Kimathi ,Kenya Commercial Bank Limited
+ke_bank1013,256 - Namanga ,Kenya Commercial Bank Limited
+ke_bank1014,257 - Gikomba ,Kenya Commercial Bank Limited
+ke_bank1015,258 - Kwale ,Kenya Commercial Bank Limited
+ke_bank1016,259 - Prestige Plaza ,Kenya Commercial Bank Limited
+ke_bank1017,260 - Kariobangi ,Kenya Commercial Bank Limited
+ke_bank1018,263 - Biashara Street ,Kenya Commercial Bank Limited
+ke_bank1019,266 - Ngara ,Kenya Commercial Bank Limited
+ke_bank1020,267 - Kyuso ,Kenya Commercial Bank Limited
+ke_bank1021,270 - Masii ,Kenya Commercial Bank Limited
+ke_bank1022,271 - Menengai Crater,Kenya Commercial Bank Limited
+ke_bank1023,272 - Town Centre ,Kenya Commercial Bank Limited
+ke_bank1024,278 - Makindu ,Kenya Commercial Bank Limited
+ke_bank1025,283 - Rongo ,Kenya Commercial Bank Limited
+ke_bank1026,284 - Isibania ,Kenya Commercial Bank Limited
+ke_bank1027,285 - Kiserian ,Kenya Commercial Bank Limited
+ke_bank1028,286 - Mwembe Tayari ,Kenya Commercial Bank Limited
+ke_bank1029,287 - Kisauni ,Kenya Commercial Bank Limited
+ke_bank1030,288 - Haile Selassie ,Kenya Commercial Bank Limited
+ke_bank1031,289 - Salama House Mortgage Centre,Kenya Commercial Bank Limited
+ke_bank1032,290 - Garden Plaza ,Kenya Commercial Bank Limited
+ke_bank1033,291 - Sarit Centre Mortgage Centre,Kenya Commercial Bank Limited
+ke_bank1034,292 - Cpc Bulk Corporate Cheques ,Kenya Commercial Bank Limited
+ke_bank1035,293 - Trade Services,Kenya Commercial Bank Limited
+ke_bank1036,295 - Nairobi High Court,Kenya Commercial Bank Limited
+ke_bank1037,296 - Mombasa High Court,Kenya Commercial Bank Limited
+ke_bank1038,297 - Kisumu Airport,Kenya Commercial Bank Limited
+ke_bank1039,298 - Port Victoria,Kenya Commercial Bank Limited
+ke_bank1040,299 - Moi International Airport,Kenya Commercial Bank Limited
+ke_bank1041,300 - Nyali,Kenya Commercial Bank Limited
+ke_bank1042,301 - Westgate Advantage,Kenya Commercial Bank Limited
+ke_bank1043,302 - Diaspora ,Kenya Commercial Bank Limited
+ke_bank1044,303 - Kisii West ,Kenya Commercial Bank Limited
+ke_bank1045,304 - Mbita,Kenya Commercial Bank Limited
+ke_bank1046,305 - Sori,Kenya Commercial Bank Limited
+ke_bank1047,306 - Hurlingham,Kenya Commercial Bank Limited
+ke_bank1048,307 - Kibera,Kenya Commercial Bank Limited
+ke_bank1049,308 - Thika Road Mall Branch,Kenya Commercial Bank Limited
+ke_bank1050,309 - Kasarani Branch,Kenya Commercial Bank Limited
+ke_bank1051,310 - KCB Maasai Mara,Kenya Commercial Bank Limited
+ke_bank1052,311 - KCB Kabartonjo,Kenya Commercial Bank Limited
+ke_bank1053,312 - KCB Eldoret East,Kenya Commercial Bank Limited
+ke_bank1054,313 - Kikim,Kenya Commercial Bank Limited
+ke_bank1055,314 - KCB JKUAT,Kenya Commercial Bank Limited
+ke_bank1056,315 - KCB Changamwe,Kenya Commercial Bank Limited
+ke_bank1057,316 - KCB Makongeni,Kenya Commercial Bank Limited
+ke_bank1058,317 - KCB Syokimau,Kenya Commercial Bank Limited
+ke_bank1059,318 - KCB Moi Referral Hospital,Kenya Commercial Bank Limited
+ke_bank1060,319 - KCB Kitale Advantage,Kenya Commercial Bank Limited
+ke_bank1061,320 - KCB Lavington,Kenya Commercial Bank Limited
+ke_bank1062,321 - KCB ICD Kibarani,Kenya Commercial Bank Limited
+ke_bank1063,322 - KCB Riverside Advantage,Kenya Commercial Bank Limited
+ke_bank1064,323 - KCB Gigiri Square,Kenya Commercial Bank Limited
+ke_bank1065,0 - Head Office ,Middle East Bank Kenya Limited
+ke_bank1066,1 - Nairobi ,Middle East Bank Kenya Limited
+ke_bank1067,2 - Mombasa ,Middle East Bank Kenya Limited
+ke_bank1068,3 - Milimani ,Middle East Bank Kenya Limited
+ke_bank1069,4 - Industrial Area,Middle East Bank Kenya Limited
+ke_bank1070,5 - Eldoret,Middle East Bank Kenya Limited
+ke_bank1071,0 - Head Office,NIC Bank Limited
+ke_bank1072,101 - City Centre,NIC Bank Limited
+ke_bank1073,102 - NIC House,NIC Bank Limited
+ke_bank1074,103 - Harbour House ,NIC Bank Limited
+ke_bank1075,104 - Head Office-Fargo,NIC Bank Limited
+ke_bank1076,105 - Westlands ,NIC Bank Limited
+ke_bank1077,106 - The Junction Br. ,NIC Bank Limited
+ke_bank1078,107 - Nakuru ,NIC Bank Limited
+ke_bank1079,108 - Nyali ,NIC Bank Limited
+ke_bank1080,109 - Nkrumah Road ,NIC Bank Limited
+ke_bank1081,110 - Harambee ,NIC Bank Limited
+ke_bank1082,111 - Prestige - Ngong Road ,NIC Bank Limited
+ke_bank1083,112 - Kisumu ,NIC Bank Limited
+ke_bank1084,113 - Thika ,NIC Bank Limited
+ke_bank1085,114 - Meru,NIC Bank Limited
+ke_bank1086,115 - Galleria (bomas ,NIC Bank Limited
+ke_bank1087,116 - ELDORET,NIC Bank Limited
+ke_bank1088,117 - VILLAGE MARKET,NIC Bank Limited
+ke_bank1089,118 - SAMEER PARK,NIC Bank Limited
+ke_bank1090,119 - Karen,NIC Bank Limited
+ke_bank1091,121 - Taj Mall,NIC Bank Limited
+ke_bank1092,122 - ABC,NIC Bank Limited
+ke_bank1093,123 - Thika Road Mall ,NIC Bank Limited
+ke_bank1094,124 - Changamwe Branch,NIC Bank Limited
+ke_bank1095,125 - Kenyatta Avenue,NIC Bank Limited
+ke_bank1096,126 - Riverside,NIC Bank Limited
+ke_bank1097,127 - Machakos,NIC Bank Limited
+ke_bank1098,128 - Lunga Lunga,NIC Bank Limited
+ke_bank1099,0 - Central Business Unit,National Bank of Kenya Limited
+ke_bank1100,2 - Kenyatta,National Bank of Kenya Limited
+ke_bank1101,3 - Harambee ,National Bank of Kenya Limited
+ke_bank1102,4 - Hill ,National Bank of Kenya Limited
+ke_bank1103,5 - Busia ,National Bank of Kenya Limited
+ke_bank1104,6 - Kiambu,National Bank of Kenya Limited
+ke_bank1105,7 - Meru ,National Bank of Kenya Limited
+ke_bank1106,8 - Karatina ,National Bank of Kenya Limited
+ke_bank1107,9 - Narok ,National Bank of Kenya Limited
+ke_bank1108,10 - Kisii ,National Bank of Kenya Limited
+ke_bank1109,11 - Malindi ,National Bank of Kenya Limited
+ke_bank1110,12 - Nyeri ,National Bank of Kenya Limited
+ke_bank1111,13 - Kitale ,National Bank of Kenya Limited
+ke_bank1112,15 - Eastleigh,National Bank of Kenya Limited
+ke_bank1113,16 - Limuru ,National Bank of Kenya Limited
+ke_bank1114,17 - Kitui ,National Bank of Kenya Limited
+ke_bank1115,18 - Molo ,National Bank of Kenya Limited
+ke_bank1116,19 - Bungoma ,National Bank of Kenya Limited
+ke_bank1117,20 - Nkrumah,National Bank of Kenya Limited
+ke_bank1118,21 - Kapsabet ,National Bank of Kenya Limited
+ke_bank1119,22 - Awendo ,National Bank of Kenya Limited
+ke_bank1120,23 - Portway-msa ,National Bank of Kenya Limited
+ke_bank1121,25 - Hospital Br. ,National Bank of Kenya Limited
+ke_bank1122,26 - Ruiru ,National Bank of Kenya Limited
+ke_bank1123,27 - Ongata Rongai ,National Bank of Kenya Limited
+ke_bank1124,28 - Embu ,National Bank of Kenya Limited
+ke_bank1125,29 - Kakamega ,National Bank of Kenya Limited
+ke_bank1126,30 - Nakuru ,National Bank of Kenya Limited
+ke_bank1127,31 - Ukunda ,National Bank of Kenya Limited
+ke_bank1128,32 - Upper Hill ,National Bank of Kenya Limited
+ke_bank1129,33 - Nandi Hills ,National Bank of Kenya Limited
+ke_bank1130,34 - Migori ,National Bank of Kenya Limited
+ke_bank1131,35 - Westlands ,National Bank of Kenya Limited
+ke_bank1132,36 - Times Tower,National Bank of Kenya Limited
+ke_bank1133,37 - Maua,National Bank of Kenya Limited
+ke_bank1134,38 - WILSON AIRPORT,National Bank of Kenya Limited
+ke_bank1135,39 - J.K.I.A.,National Bank of Kenya Limited
+ke_bank1136,40 - Eldoret ,National Bank of Kenya Limited
+ke_bank1137,41 - MOIS BRIDGE,National Bank of Kenya Limited
+ke_bank1138,42 - MUTOMO,National Bank of Kenya Limited
+ke_bank1139,43 - KIANJAI,National Bank of Kenya Limited
+ke_bank1140,44 - KENYATTA UNIVERSITY,National Bank of Kenya Limited
+ke_bank1141,45 - ST PAULS UNIVERSITY,National Bank of Kenya Limited
+ke_bank1142,46 - MOI UNIVERSITY ELDORET,National Bank of Kenya Limited
+ke_bank1143,47 - MOI INT AIRPORT MOMBASA,National Bank of Kenya Limited
+ke_bank1144,48 - Machakos,National Bank of Kenya Limited
+ke_bank1145,49 - Kitengela,National Bank of Kenya Limited
+ke_bank1146,50 - Kisumu ,National Bank of Kenya Limited
+ke_bank1147,51 - Mtwapa,National Bank of Kenya Limited
+ke_bank1148,52 - Changamwe,National Bank of Kenya Limited
+ke_bank1149,53 - Garissa,National Bank of Kenya Limited
+ke_bank1150,54 - Thika,National Bank of Kenya Limited
+ke_bank1151,55 - Momasa Polytechnic University College,National Bank of Kenya Limited
+ke_bank1152,56 - Bomet,National Bank of Kenya Limited
+ke_bank1153,58 - Greenspan,National Bank of Kenya Limited
+ke_bank1154,59 - Sameer Park,National Bank of Kenya Limited
+ke_bank1155,60 - SEKU,National Bank of Kenya Limited
+ke_bank1156,61 - Ngong Road,National Bank of Kenya Limited
+ke_bank1157,62 - Moi Avenue,National Bank of Kenya Limited
+ke_bank1158,63 - Mountain Mall,National Bank of Kenya Limited
+ke_bank1159,65 - Nyali Centre,National Bank of Kenya Limited
+ke_bank1160,66 - Kilifi,National Bank of Kenya Limited
+ke_bank1161,67 - South C Branch- KEBS,National Bank of Kenya Limited
+ke_bank1162,68 - Kericho,National Bank of Kenya Limited
+ke_bank1163,70 - Isiolo,National Bank of Kenya Limited
+ke_bank1164,71 - South C - Red Cross,National Bank of Kenya Limited
+ke_bank1165,72 - Kisumu,National Bank of Kenya Limited
+ke_bank1166,73 - Yaya Centre,National Bank of Kenya Limited
+ke_bank1167,74 - Gigiri,National Bank of Kenya Limited
+ke_bank1168,93 - Wajir,National Bank of Kenya Limited
+ke_bank1169,94 - Bondeni,National Bank of Kenya Limited
+ke_bank1170,95 - Lunga Lunga,National Bank of Kenya Limited
+ke_bank1171,96 - Mandera,National Bank of Kenya Limited
+ke_bank1172,98 - Card Centre ,National Bank of Kenya Limited
+ke_bank1173,99 - Head Office,National Bank of Kenya Limited
+ke_bank1174,198 - Central CLearing Centre,National Bank of Kenya Limited
+ke_bank1175,200 - Head Office Amanah,National Bank of Kenya Limited
+ke_bank1176,201 - Card Centre Amanah,National Bank of Kenya Limited
+ke_bank1177,202 - Eastleigh Amanah,National Bank of Kenya Limited
+ke_bank1178,203 - Kenyatta Ave Amanah,National Bank of Kenya Limited
+ke_bank1179,204 - Wajir Amanah,National Bank of Kenya Limited
+ke_bank1180,205 - Bondeni Amanah,National Bank of Kenya Limited
+ke_bank1181,206 - Garissa Amanah,National Bank of Kenya Limited
+ke_bank1182,207 - Mandera Amanah,National Bank of Kenya Limited
+ke_bank1183,208 - Isiolo Amanah,National Bank of Kenya Limited
+ke_bank1184,0 - Head Office ,Paramount Universal Bank Limited
+ke_bank1185,1 - Westlands ,Paramount Universal Bank Limited
+ke_bank1186,2 - Parklands ,Paramount Universal Bank Limited
+ke_bank1187,3 - Koinange Street ,Paramount Universal Bank Limited
+ke_bank1188,4 - Mombasa ,Paramount Universal Bank Limited
+ke_bank1189,6 - Eldoret,Paramount Universal Bank Limited
+ke_bank1190,7 - Industrial Area,Paramount Universal Bank Limited
+ke_bank1191,0 - H/o Riverside , Prime Bank Limited
+ke_bank1192,1 - Kenindia , Prime Bank Limited
+ke_bank1193,2 - Biashara , Prime Bank Limited
+ke_bank1194,3 - Mombasa , Prime Bank Limited
+ke_bank1195,4 - Westlands , Prime Bank Limited
+ke_bank1196,5 - Industrial Area , Prime Bank Limited
+ke_bank1197,6 - Kisumu , Prime Bank Limited
+ke_bank1198,7 - Parklands , Prime Bank Limited
+ke_bank1199,8 - Riverside Drive , Prime Bank Limited
+ke_bank1200,9 - Card Centre , Prime Bank Limited
+ke_bank1201,10 - Hurlingham , Prime Bank Limited
+ke_bank1202,11 - Capital Centre , Prime Bank Limited
+ke_bank1203,12 - Nyali , Prime Bank Limited
+ke_bank1204,14 - Kamukunji , Prime Bank Limited
+ke_bank1205,15 - Eldoret, Prime Bank Limited
+ke_bank1206,16 - Karen , Prime Bank Limited
+ke_bank1207,17 - Nakuru , Prime Bank Limited
+ke_bank1208,18 - Gigiri, Prime Bank Limited
+ke_bank1209,19 - Thika, Prime Bank Limited
+ke_bank1210,0 - Eldoret ,Standard Chartered Bank Kenya Limited
+ke_bank1211,1 - Kericho ,Standard Chartered Bank Kenya Limited
+ke_bank1212,2 - Kisumu ,Standard Chartered Bank Kenya Limited
+ke_bank1213,3 - Kitale ,Standard Chartered Bank Kenya Limited
+ke_bank1214,4 - Treasury Square ,Standard Chartered Bank Kenya Limited
+ke_bank1215,5 - Kilindini ,Standard Chartered Bank Kenya Limited
+ke_bank1216,6 - Kenyatta Avenue ,Standard Chartered Bank Kenya Limited
+ke_bank1217,8 - Moi Avenue ,Standard Chartered Bank Kenya Limited
+ke_bank1218,9 - Nakuru ,Standard Chartered Bank Kenya Limited
+ke_bank1219,10 - Nanyuki ,Standard Chartered Bank Kenya Limited
+ke_bank1220,11 - Nyeri ,Standard Chartered Bank Kenya Limited
+ke_bank1221,12 - Thika ,Standard Chartered Bank Kenya Limited
+ke_bank1222,15 - Westlands ,Standard Chartered Bank Kenya Limited
+ke_bank1223,16 - Machakos ,Standard Chartered Bank Kenya Limited
+ke_bank1224,17 - Meru ,Standard Chartered Bank Kenya Limited
+ke_bank1225,19 - Harambee Avenue ,Standard Chartered Bank Kenya Limited
+ke_bank1226,20 - Kiambu ,Standard Chartered Bank Kenya Limited
+ke_bank1227,53 - Industrial Area ,Standard Chartered Bank Kenya Limited
+ke_bank1228,54 - Kakamega ,Standard Chartered Bank Kenya Limited
+ke_bank1229,60 - Malindi ,Standard Chartered Bank Kenya Limited
+ke_bank1230,64 - Koinage,Standard Chartered Bank Kenya Limited
+ke_bank1231,71 - Yaya Centre Branch ,Standard Chartered Bank Kenya Limited
+ke_bank1232,72 - Ruaraka ,Standard Chartered Bank Kenya Limited
+ke_bank1233,73 - Langata ,Standard Chartered Bank Kenya Limited
+ke_bank1234,74 - Makupa ,Standard Chartered Bank Kenya Limited
+ke_bank1235,75 - Karen ,Standard Chartered Bank Kenya Limited
+ke_bank1236,76 - Muthaiga ,Standard Chartered Bank Kenya Limited
+ke_bank1237,78 - C.o.u ,Standard Chartered Bank Kenya Limited
+ke_bank1238,79 - Ukay ,Standard Chartered Bank Kenya Limited
+ke_bank1239,80 - Eastleigh ,Standard Chartered Bank Kenya Limited
+ke_bank1240,81 - Kisii ,Standard Chartered Bank Kenya Limited
+ke_bank1241,82 - Upper Hill Branch ,Standard Chartered Bank Kenya Limited
+ke_bank1242,83 - Nyali ,Standard Chartered Bank Kenya Limited
+ke_bank1243,84 - Chiromo,Standard Chartered Bank Kenya Limited
+ke_bank1244,85 - Greenspan,Standard Chartered Bank Kenya Limited
+ke_bank1245,86 - The T-Mall,Standard Chartered Bank Kenya Limited
+ke_bank1246,87 - The Junction,Standard Chartered Bank Kenya Limited
+ke_bank1247,89 - Kitengela,Standard Chartered Bank Kenya Limited
+ke_bank1248,90 - Bungoma ,Standard Chartered Bank Kenya Limited
+ke_bank1249,91 - Thika Road Mall,Standard Chartered Bank Kenya Limited
+ke_bank1250,92 - UN Gigiri,Standard Chartered Bank Kenya Limited
+ke_bank1251,1 - Head Office ,Trans-National Bank Limited
+ke_bank1252,2 - Mombasa ,Trans-National Bank Limited
+ke_bank1253,3 - Eldoret ,Trans-National Bank Limited
+ke_bank1254,4 - Nakuru ,Trans-National Bank Limited
+ke_bank1255,5 - Mia ,Trans-National Bank Limited
+ke_bank1256,6 - Jkia ,Trans-National Bank Limited
+ke_bank1257,7 - Kirinyaga Rd Nakuru ,Trans-National Bank Limited
+ke_bank1258,8 - Kabarak ,Trans-National Bank Limited
+ke_bank1259,9 - Olenguruone ,Trans-National Bank Limited
+ke_bank1260,10 - Kericho ,Trans-National Bank Limited
+ke_bank1261,11 - Nandi Hills,Trans-National Bank Limited
+ke_bank1262,12 - Epz ,Trans-National Bank Limited
+ke_bank1263,13 - Sheikh Karume ,Trans-National Bank Limited
+ke_bank1264,14 - Kabarnet ,Trans-National Bank Limited
+ke_bank1265,15 - Kitale,Trans-National Bank Limited
+ke_bank1266,16 - Narok,Trans-National Bank Limited
+ke_bank1267,17 - Bomet,Trans-National Bank Limited
+ke_bank1268,18 - Iten,Trans-National Bank Limited
+ke_bank1269,0 - Head Office/koinange St. ,African Banking Corp. Bank Ltd
+ke_bank1270,1 - Westlands,African Banking Corp. Bank Ltd
+ke_bank1271,2 - Industrial Area Branch ,African Banking Corp. Bank Ltd
+ke_bank1272,3 - Nkrumah Road Branch/mombasa ,African Banking Corp. Bank Ltd
+ke_bank1273,4 - Kisumu Branch ,African Banking Corp. Bank Ltd
+ke_bank1274,5 - Eldoret Branch,African Banking Corp. Bank Ltd
+ke_bank1275,6 - Meru Branch ,African Banking Corp. Bank Ltd
+ke_bank1276,7 - Libra House ,African Banking Corp. Bank Ltd
+ke_bank1277,8 - Nakuru,African Banking Corp. Bank Ltd
+ke_bank1278,9 - Lamu,African Banking Corp. Bank Ltd
+ke_bank1279,0 - Head Office ,Co-operative Bank of Kenya Limited
+ke_bank1280,1 - Finance And Accounts ,Co-operative Bank of Kenya Limited
+ke_bank1281,2 - Co-op House ,Co-operative Bank of Kenya Limited
+ke_bank1282,3 - Kisumu ,Co-operative Bank of Kenya Limited
+ke_bank1283,4 - Nkurumah Road,Co-operative Bank of Kenya Limited
+ke_bank1284,5 - Meru ,Co-operative Bank of Kenya Limited
+ke_bank1285,6 - Nakuru ,Co-operative Bank of Kenya Limited
+ke_bank1286,7 - Industrial Area ,Co-operative Bank of Kenya Limited
+ke_bank1287,8 - Kisii ,Co-operative Bank of Kenya Limited
+ke_bank1288,9 - Machakos ,Co-operative Bank of Kenya Limited
+ke_bank1289,10 - Nyeri ,Co-operative Bank of Kenya Limited
+ke_bank1290,11 - Ukulima ,Co-operative Bank of Kenya Limited
+ke_bank1291,12 - Kerugoya ,Co-operative Bank of Kenya Limited
+ke_bank1292,13 - Eldoret ,Co-operative Bank of Kenya Limited
+ke_bank1293,14 - Moi Avenue ,Co-operative Bank of Kenya Limited
+ke_bank1294,15 - Naivasha ,Co-operative Bank of Kenya Limited
+ke_bank1295,17 - Nyahururu ,Co-operative Bank of Kenya Limited
+ke_bank1296,18 - Chuka ,Co-operative Bank of Kenya Limited
+ke_bank1297,19 - Wakulima Market ,Co-operative Bank of Kenya Limited
+ke_bank1298,20 - Eastleigh ,Co-operative Bank of Kenya Limited
+ke_bank1299,21 - Kiambu ,Co-operative Bank of Kenya Limited
+ke_bank1300,22 - Homa Bay ,Co-operative Bank of Kenya Limited
+ke_bank1301,23 - Embu ,Co-operative Bank of Kenya Limited
+ke_bank1302,24 - Kericho ,Co-operative Bank of Kenya Limited
+ke_bank1303,25 - Bungoma ,Co-operative Bank of Kenya Limited
+ke_bank1304,26 - Muranga ,Co-operative Bank of Kenya Limited
+ke_bank1305,27 - Kayole ,Co-operative Bank of Kenya Limited
+ke_bank1306,28 - Karatina ,Co-operative Bank of Kenya Limited
+ke_bank1307,29 - Ukunda ,Co-operative Bank of Kenya Limited
+ke_bank1308,30 - Mtwapa ,Co-operative Bank of Kenya Limited
+ke_bank1309,31 - University Way ,Co-operative Bank of Kenya Limited
+ke_bank1310,32 - Buru Buru ,Co-operative Bank of Kenya Limited
+ke_bank1311,33 - Athi River ,Co-operative Bank of Kenya Limited
+ke_bank1312,34 - Mumias ,Co-operative Bank of Kenya Limited
+ke_bank1313,35 - Stima Plaza ,Co-operative Bank of Kenya Limited
+ke_bank1314,36 - Westlands ,Co-operative Bank of Kenya Limited
+ke_bank1315,37 - Upper Hill ,Co-operative Bank of Kenya Limited
+ke_bank1316,38 - Ongata Rongai ,Co-operative Bank of Kenya Limited
+ke_bank1317,39 - Thika ,Co-operative Bank of Kenya Limited
+ke_bank1318,40 - Nacico ,Co-operative Bank of Kenya Limited
+ke_bank1319,41 - Kariobangi ,Co-operative Bank of Kenya Limited
+ke_bank1320,42 - Kawangware ,Co-operative Bank of Kenya Limited
+ke_bank1321,43 - Makutano ,Co-operative Bank of Kenya Limited
+ke_bank1322,44 - Canon House ,Co-operative Bank of Kenya Limited
+ke_bank1323,45 - Kimathi Street ,Co-operative Bank of Kenya Limited
+ke_bank1324,46 - Kitale ,Co-operative Bank of Kenya Limited
+ke_bank1325,47 - Githurai ,Co-operative Bank of Kenya Limited
+ke_bank1326,48 - Maua ,Co-operative Bank of Kenya Limited
+ke_bank1327,49 - City  Hall ,Co-operative Bank of Kenya Limited
+ke_bank1328,50 - Digo Rd ,Co-operative Bank of Kenya Limited
+ke_bank1329,51 - Nbc ,Co-operative Bank of Kenya Limited
+ke_bank1330,52 - Kakamega,Co-operative Bank of Kenya Limited
+ke_bank1331,53 - Migori ,Co-operative Bank of Kenya Limited
+ke_bank1332,54 - Kenyatta Avenue ,Co-operative Bank of Kenya Limited
+ke_bank1333,55 - Nkubu ,Co-operative Bank of Kenya Limited
+ke_bank1334,56 - Enterprise Road ,Co-operative Bank of Kenya Limited
+ke_bank1335,57 - Busia ,Co-operative Bank of Kenya Limited
+ke_bank1336,58 - Siaya ,Co-operative Bank of Kenya Limited
+ke_bank1337,59 - Voi ,Co-operative Bank of Kenya Limited
+ke_bank1338,60 - Mariakani ,Co-operative Bank of Kenya Limited
+ke_bank1339,61 - Malindi ,Co-operative Bank of Kenya Limited
+ke_bank1340,62 - Zimmerman ,Co-operative Bank of Kenya Limited
+ke_bank1341,63 - Nakuru East ,Co-operative Bank of Kenya Limited
+ke_bank1342,64 - Kitengela ,Co-operative Bank of Kenya Limited
+ke_bank1343,65 - Aga Khan Walk ,Co-operative Bank of Kenya Limited
+ke_bank1344,66 - Narok ,Co-operative Bank of Kenya Limited
+ke_bank1345,67 - Kitui ,Co-operative Bank of Kenya Limited
+ke_bank1346,68 - Nanyuki ,Co-operative Bank of Kenya Limited
+ke_bank1347,69 - Embakasi ,Co-operative Bank of Kenya Limited
+ke_bank1348,70 - Kibera ,Co-operative Bank of Kenya Limited
+ke_bank1349,71 - Siakago ,Co-operative Bank of Kenya Limited
+ke_bank1350,72 - Kapsabet ,Co-operative Bank of Kenya Limited
+ke_bank1351,73 - Mbita ,Co-operative Bank of Kenya Limited
+ke_bank1352,74 - Kangemi ,Co-operative Bank of Kenya Limited
+ke_bank1353,75 - Dandora ,Co-operative Bank of Kenya Limited
+ke_bank1354,76 - Kajiado ,Co-operative Bank of Kenya Limited
+ke_bank1355,77 - Tala ,Co-operative Bank of Kenya Limited
+ke_bank1356,78 - Gikomba ,Co-operative Bank of Kenya Limited
+ke_bank1357,79 - River Road ,Co-operative Bank of Kenya Limited
+ke_bank1358,80 - Nyamira ,Co-operative Bank of Kenya Limited
+ke_bank1359,81 - Garisa ,Co-operative Bank of Kenya Limited
+ke_bank1360,82 - Bomet ,Co-operative Bank of Kenya Limited
+ke_bank1361,83 - Keroka ,Co-operative Bank of Kenya Limited
+ke_bank1362,84 - Gilgil ,Co-operative Bank of Kenya Limited
+ke_bank1363,85 - Tom Mboya ,Co-operative Bank of Kenya Limited
+ke_bank1364,86 - Likoni ,Co-operative Bank of Kenya Limited
+ke_bank1365,87 - Donholm ,Co-operative Bank of Kenya Limited
+ke_bank1366,88 - Mwingi ,Co-operative Bank of Kenya Limited
+ke_bank1367,89 - Ruaka,Co-operative Bank of Kenya Limited
+ke_bank1368,90 - Webuye,Co-operative Bank of Kenya Limited
+ke_bank1369,94 - Sacco Clearing Unit,Co-operative Bank of Kenya Limited
+ke_bank1370,97 - clearing Centre,Co-operative Bank of Kenya Limited
+ke_bank1371,100 - Ndhiwa,Co-operative Bank of Kenya Limited
+ke_bank1372,101 - Oyugis,Co-operative Bank of Kenya Limited
+ke_bank1373,102 - Isiolo,Co-operative Bank of Kenya Limited
+ke_bank1374,103 - Eldoret West,Co-operative Bank of Kenya Limited
+ke_bank1375,104 - Changamwe,Co-operative Bank of Kenya Limited
+ke_bank1376,105 - Kisumu East,Co-operative Bank of Kenya Limited
+ke_bank1377,106 - Githurai Kimbo,Co-operative Bank of Kenya Limited
+ke_bank1378,107 - Mlolongo,Co-operative Bank of Kenya Limited
+ke_bank1379,108 - Kilifi,Co-operative Bank of Kenya Limited
+ke_bank1380,109 - Ol Kalau,Co-operative Bank of Kenya Limited
+ke_bank1381,110 - Mbale,Co-operative Bank of Kenya Limited
+ke_bank1382,111 - Kimilili,Co-operative Bank of Kenya Limited
+ke_bank1383,112 - Kisii East,Co-operative Bank of Kenya Limited
+ke_bank1384,113 - Kilgoris,Co-operative Bank of Kenya Limited
+ke_bank1385,114 - Wote,Co-operative Bank of Kenya Limited
+ke_bank1386,116 - Malaba,Co-operative Bank of Kenya Limited
+ke_bank1387,117 - Molo,Co-operative Bank of Kenya Limited
+ke_bank1388,118 - Mwea,Co-operative Bank of Kenya Limited
+ke_bank1389,119 - Kutus,Co-operative Bank of Kenya Limited
+ke_bank1390,120 - Umoja,Co-operative Bank of Kenya Limited
+ke_bank1391,121 - Embakasi Junction,Co-operative Bank of Kenya Limited
+ke_bank1392,122 - Kongowea ,Co-operative Bank of Kenya Limited
+ke_bank1393,123 - Langata Road,Co-operative Bank of Kenya Limited
+ke_bank1394,124 - Juja,Co-operative Bank of Kenya Limited
+ke_bank1395,125 - Ngong,Co-operative Bank of Kenya Limited
+ke_bank1396,126 - Kawangware 46,Co-operative Bank of Kenya Limited
+ke_bank1397,127 - Mombasa Road,Co-operative Bank of Kenya Limited
+ke_bank1398,128 - Marsabit,Co-operative Bank of Kenya Limited
+ke_bank1399,130 - Dagoretti,Co-operative Bank of Kenya Limited
+ke_bank1400,131 - Othaya,Co-operative Bank of Kenya Limited
+ke_bank1401,132 - Limuru,Co-operative Bank of Kenya Limited
+ke_bank1402,133 - Kikuyu,Co-operative Bank of Kenya Limited
+ke_bank1403,134 - Githunguri,Co-operative Bank of Kenya Limited
+ke_bank1404,135 - Karen,Co-operative Bank of Kenya Limited
+ke_bank1405,136 - Mpeketoni,Co-operative Bank of Kenya Limited
+ke_bank1406,137 - Gatundu,Co-operative Bank of Kenya Limited
+ke_bank1407,138 - Ruiru,Co-operative Bank of Kenya Limited
+ke_bank1408,139 - Nyali Mall ,Co-operative Bank of Kenya Limited
+ke_bank1409,140 - Yala,Co-operative Bank of Kenya Limited
+ke_bank1410,141 - Maasai Mall - Ongata Rongai,Co-operative Bank of Kenya Limited
+ke_bank1411,142 - Thika Road Mall,Co-operative Bank of Kenya Limited
+ke_bank1412,143 - Kiserian,Co-operative Bank of Kenya Limited
+ke_bank1413,144 - Nandi Hills,Co-operative Bank of Kenya Limited
+ke_bank1414,145 - Lodwar,Co-operative Bank of Kenya Limited
+ke_bank1415,147 - Engineer,Co-operative Bank of Kenya Limited
+ke_bank1416,148 - Rongo,Co-operative Bank of Kenya Limited
+ke_bank1417,149 - Lavington Mall,Co-operative Bank of Kenya Limited
+ke_bank1418,150 - Bondo,Co-operative Bank of Kenya Limited
+ke_bank1419,151 - Gigiri Mall,Co-operative Bank of Kenya Limited
+ke_bank1420,"152 - United Mall, Kisumu",Co-operative Bank of Kenya Limited
+ke_bank1421,153 - Green House Mall,Co-operative Bank of Kenya Limited
+ke_bank1422,228 - Shares Operations ,Co-operative Bank of Kenya Limited
+ke_bank1423,247 - Back Office Operations,Co-operative Bank of Kenya Limited
+ke_bank1424,250 - E- Channels Unit,Co-operative Bank of Kenya Limited
+ke_bank1425,254 - Diaspora Banking,Co-operative Bank of Kenya Limited
+ke_bank1426,266 - Kilindini Port ,Co-operative Bank of Kenya Limited
+ke_bank1427,270 - Money Transfers Agency ,Co-operative Bank of Kenya Limited
+ke_bank1428,0 - Head Office ,Co-operative Bank of Kenya Limited
+ke_bank1429,1 - Finance And Accounts ,Co-operative Bank of Kenya Limited
+ke_bank1430,2 - Co-op House ,Co-operative Bank of Kenya Limited
+ke_bank1431,3 - Kisumu ,Co-operative Bank of Kenya Limited
+ke_bank1432,4 - Nkurumah Road,Co-operative Bank of Kenya Limited
+ke_bank1433,5 - Meru ,Co-operative Bank of Kenya Limited
+ke_bank1434,6 - Nakuru ,Co-operative Bank of Kenya Limited
+ke_bank1435,7 - Industrial Area ,Co-operative Bank of Kenya Limited
+ke_bank1436,8 - Kisii ,Co-operative Bank of Kenya Limited
+ke_bank1437,9 - Machakos ,Co-operative Bank of Kenya Limited
+ke_bank1438,10 - Nyeri ,Co-operative Bank of Kenya Limited
+ke_bank1439,11 - Ukulima ,Co-operative Bank of Kenya Limited
+ke_bank1440,12 - Kerugoya ,Co-operative Bank of Kenya Limited
+ke_bank1441,13 - Eldoret ,Co-operative Bank of Kenya Limited
+ke_bank1442,14 - Moi Avenue ,Co-operative Bank of Kenya Limited
+ke_bank1443,15 - Naivasha ,Co-operative Bank of Kenya Limited
+ke_bank1444,17 - Nyahururu ,Co-operative Bank of Kenya Limited
+ke_bank1445,18 - Chuka ,Co-operative Bank of Kenya Limited
+ke_bank1446,19 - Wakulima Market ,Co-operative Bank of Kenya Limited
+ke_bank1447,20 - Eastleigh ,Co-operative Bank of Kenya Limited
+ke_bank1448,21 - Kiambu ,Co-operative Bank of Kenya Limited
+ke_bank1449,22 - Homa Bay ,Co-operative Bank of Kenya Limited
+ke_bank1450,23 - Embu ,Co-operative Bank of Kenya Limited
+ke_bank1451,24 - Kericho ,Co-operative Bank of Kenya Limited
+ke_bank1452,25 - Bungoma ,Co-operative Bank of Kenya Limited
+ke_bank1453,26 - Muranga ,Co-operative Bank of Kenya Limited
+ke_bank1454,27 - Kayole ,Co-operative Bank of Kenya Limited
+ke_bank1455,28 - Karatina ,Co-operative Bank of Kenya Limited
+ke_bank1456,29 - Ukunda ,Co-operative Bank of Kenya Limited
+ke_bank1457,30 - Mtwapa ,Co-operative Bank of Kenya Limited
+ke_bank1458,31 - University Way ,Co-operative Bank of Kenya Limited
+ke_bank1459,32 - Buru Buru ,Co-operative Bank of Kenya Limited
+ke_bank1460,33 - Athi River ,Co-operative Bank of Kenya Limited
+ke_bank1461,34 - Mumias ,Co-operative Bank of Kenya Limited
+ke_bank1462,35 - Stima Plaza ,Co-operative Bank of Kenya Limited
+ke_bank1463,36 - Westlands ,Co-operative Bank of Kenya Limited
+ke_bank1464,37 - Upper Hill ,Co-operative Bank of Kenya Limited
+ke_bank1465,38 - Ongata Rongai ,Co-operative Bank of Kenya Limited
+ke_bank1466,39 - Thika ,Co-operative Bank of Kenya Limited
+ke_bank1467,40 - Nacico ,Co-operative Bank of Kenya Limited
+ke_bank1468,41 - Kariobangi ,Co-operative Bank of Kenya Limited
+ke_bank1469,42 - Kawangware ,Co-operative Bank of Kenya Limited
+ke_bank1470,43 - Makutano ,Co-operative Bank of Kenya Limited
+ke_bank1471,44 - Canon House ,Co-operative Bank of Kenya Limited
+ke_bank1472,45 - Kimathi Street ,Co-operative Bank of Kenya Limited
+ke_bank1473,46 - Kitale ,Co-operative Bank of Kenya Limited
+ke_bank1474,47 - Githurai ,Co-operative Bank of Kenya Limited
+ke_bank1475,48 - Maua ,Co-operative Bank of Kenya Limited
+ke_bank1476,49 - City  Hall ,Co-operative Bank of Kenya Limited
+ke_bank1477,50 - Digo Rd ,Co-operative Bank of Kenya Limited
+ke_bank1478,51 - Nbc ,Co-operative Bank of Kenya Limited
+ke_bank1479,52 - Kakamega,Co-operative Bank of Kenya Limited
+ke_bank1480,53 - Migori ,Co-operative Bank of Kenya Limited
+ke_bank1481,54 - Kenyatta Avenue ,Co-operative Bank of Kenya Limited
+ke_bank1482,55 - Nkubu ,Co-operative Bank of Kenya Limited
+ke_bank1483,56 - Enterprise Road ,Co-operative Bank of Kenya Limited
+ke_bank1484,57 - Busia ,Co-operative Bank of Kenya Limited
+ke_bank1485,58 - Siaya ,Co-operative Bank of Kenya Limited
+ke_bank1486,59 - Voi ,Co-operative Bank of Kenya Limited
+ke_bank1487,60 - Mariakani ,Co-operative Bank of Kenya Limited
+ke_bank1488,61 - Malindi ,Co-operative Bank of Kenya Limited
+ke_bank1489,62 - Zimmerman ,Co-operative Bank of Kenya Limited
+ke_bank1490,63 - Nakuru East ,Co-operative Bank of Kenya Limited
+ke_bank1491,64 - Kitengela ,Co-operative Bank of Kenya Limited
+ke_bank1492,65 - Aga Khan Walk ,Co-operative Bank of Kenya Limited
+ke_bank1493,66 - Narok ,Co-operative Bank of Kenya Limited
+ke_bank1494,67 - Kitui ,Co-operative Bank of Kenya Limited
+ke_bank1495,68 - Nanyuki ,Co-operative Bank of Kenya Limited
+ke_bank1496,69 - Embakasi ,Co-operative Bank of Kenya Limited
+ke_bank1497,70 - Kibera ,Co-operative Bank of Kenya Limited
+ke_bank1498,71 - Siakago ,Co-operative Bank of Kenya Limited
+ke_bank1499,72 - Kapsabet ,Co-operative Bank of Kenya Limited
+ke_bank1500,73 - Mbita ,Co-operative Bank of Kenya Limited
+ke_bank1501,74 - Kangemi ,Co-operative Bank of Kenya Limited
+ke_bank1502,75 - Dandora ,Co-operative Bank of Kenya Limited
+ke_bank1503,76 - Kajiado ,Co-operative Bank of Kenya Limited
+ke_bank1504,77 - Tala ,Co-operative Bank of Kenya Limited
+ke_bank1505,78 - Gikomba ,Co-operative Bank of Kenya Limited
+ke_bank1506,79 - River Road ,Co-operative Bank of Kenya Limited
+ke_bank1507,80 - Nyamira ,Co-operative Bank of Kenya Limited
+ke_bank1508,81 - Garisa ,Co-operative Bank of Kenya Limited
+ke_bank1509,82 - Bomet ,Co-operative Bank of Kenya Limited
+ke_bank1510,83 - Keroka ,Co-operative Bank of Kenya Limited
+ke_bank1511,84 - Gilgil ,Co-operative Bank of Kenya Limited
+ke_bank1512,85 - Tom Mboya ,Co-operative Bank of Kenya Limited
+ke_bank1513,86 - Likoni ,Co-operative Bank of Kenya Limited
+ke_bank1514,87 - Donholm ,Co-operative Bank of Kenya Limited
+ke_bank1515,88 - Mwingi ,Co-operative Bank of Kenya Limited
+ke_bank1516,89 - Ruaka,Co-operative Bank of Kenya Limited
+ke_bank1517,90 - Webuye,Co-operative Bank of Kenya Limited
+ke_bank1518,94 - Sacco Clearing Unit,Co-operative Bank of Kenya Limited
+ke_bank1519,97 - clearing Centre,Co-operative Bank of Kenya Limited
+ke_bank1520,100 - Ndhiwa,Co-operative Bank of Kenya Limited
+ke_bank1521,101 - Oyugis,Co-operative Bank of Kenya Limited
+ke_bank1522,102 - Isiolo,Co-operative Bank of Kenya Limited
+ke_bank1523,103 - Eldoret West,Co-operative Bank of Kenya Limited
+ke_bank1524,104 - Changamwe,Co-operative Bank of Kenya Limited
+ke_bank1525,105 - Kisumu East,Co-operative Bank of Kenya Limited
+ke_bank1526,106 - Githurai Kimbo,Co-operative Bank of Kenya Limited
+ke_bank1527,107 - Mlolongo,Co-operative Bank of Kenya Limited
+ke_bank1528,108 - Kilifi,Co-operative Bank of Kenya Limited
+ke_bank1529,109 - Ol Kalau,Co-operative Bank of Kenya Limited
+ke_bank1530,110 - Mbale,Co-operative Bank of Kenya Limited
+ke_bank1531,111 - Kimilili,Co-operative Bank of Kenya Limited
+ke_bank1532,112 - Kisii East,Co-operative Bank of Kenya Limited
+ke_bank1533,113 - Kilgoris,Co-operative Bank of Kenya Limited
+ke_bank1534,114 - Wote,Co-operative Bank of Kenya Limited
+ke_bank1535,116 - Malaba,Co-operative Bank of Kenya Limited
+ke_bank1536,117 - Molo,Co-operative Bank of Kenya Limited
+ke_bank1537,118 - Mwea,Co-operative Bank of Kenya Limited
+ke_bank1538,119 - Kutus,Co-operative Bank of Kenya Limited
+ke_bank1539,120 - Umoja,Co-operative Bank of Kenya Limited
+ke_bank1540,121 - Embakasi Junction,Co-operative Bank of Kenya Limited
+ke_bank1541,122 - Kongowea ,Co-operative Bank of Kenya Limited
+ke_bank1542,123 - Langata Road,Co-operative Bank of Kenya Limited
+ke_bank1543,124 - Juja,Co-operative Bank of Kenya Limited
+ke_bank1544,125 - Ngong,Co-operative Bank of Kenya Limited
+ke_bank1545,126 - Kawangware 46,Co-operative Bank of Kenya Limited
+ke_bank1546,127 - Mombasa Road,Co-operative Bank of Kenya Limited
+ke_bank1547,128 - Marsabit,Co-operative Bank of Kenya Limited
+ke_bank1548,130 - Dagoretti,Co-operative Bank of Kenya Limited
+ke_bank1549,131 - Othaya,Co-operative Bank of Kenya Limited
+ke_bank1550,132 - Limuru,Co-operative Bank of Kenya Limited
+ke_bank1551,133 - Kikuyu,Co-operative Bank of Kenya Limited
+ke_bank1552,134 - Githunguri,Co-operative Bank of Kenya Limited
+ke_bank1553,135 - Karen,Co-operative Bank of Kenya Limited
+ke_bank1554,136 - Mpeketoni,Co-operative Bank of Kenya Limited
+ke_bank1555,137 - Gatundu,Co-operative Bank of Kenya Limited
+ke_bank1556,138 - Ruiru,Co-operative Bank of Kenya Limited
+ke_bank1557,139 - Nyali Mall ,Co-operative Bank of Kenya Limited
+ke_bank1558,140 - Yala,Co-operative Bank of Kenya Limited
+ke_bank1559,141 - Maasai Mall - Ongata Rongai,Co-operative Bank of Kenya Limited
+ke_bank1560,142 - Thika Road Mall,Co-operative Bank of Kenya Limited
+ke_bank1561,143 - Kiserian,Co-operative Bank of Kenya Limited
+ke_bank1562,144 - Nandi Hills,Co-operative Bank of Kenya Limited
+ke_bank1563,145 - Lodwar,Co-operative Bank of Kenya Limited
+ke_bank1564,147 - Engineer,Co-operative Bank of Kenya Limited
+ke_bank1565,148 - Rongo,Co-operative Bank of Kenya Limited
+ke_bank1566,149 - Lavington Mall,Co-operative Bank of Kenya Limited
+ke_bank1567,150 - Bondo,Co-operative Bank of Kenya Limited
+ke_bank1568,151 - Gigiri Mall,Co-operative Bank of Kenya Limited
+ke_bank1569,"152 - United Mall, Kisumu",Co-operative Bank of Kenya Limited
+ke_bank1570,153 - Green House Mall,Co-operative Bank of Kenya Limited
+ke_bank1571,228 - Shares Operations ,Co-operative Bank of Kenya Limited
+ke_bank1572,247 - Back Office Operations,Co-operative Bank of Kenya Limited
+ke_bank1573,250 - E- Channels Unit,Co-operative Bank of Kenya Limited
+ke_bank1574,254 - Diaspora Banking,Co-operative Bank of Kenya Limited
+ke_bank1575,266 - Kilindini Port ,Co-operative Bank of Kenya Limited
+ke_bank1576,270 - Money Transfers Agency ,Co-operative Bank of Kenya Limited

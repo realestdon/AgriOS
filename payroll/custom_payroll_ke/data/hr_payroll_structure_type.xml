@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="hr_payroll_structure_type_ke"
+                model="hr.payroll.structure.type">
+            <field name="name">Kenya Payroll</field>
+            <field name="country_id" ref="base.ke"/>
+        </record>
+        <record id="hr_payroll_structure_type_ke"
+                model="hr.payroll.structure.type">
+            <field name="default_struct_id"
+                   ref="custom_payroll_ke.payroll_structure_ke"/>
+        </record>
+    </data>
+</odoo>

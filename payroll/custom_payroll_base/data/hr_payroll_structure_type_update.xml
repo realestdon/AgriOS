@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="base_hr_payroll_structure_type"
+                model="hr.payroll.structure.type">
+            <field name="default_struct_id"
+                   ref="custom_payroll_base.base_payroll_structure"/>
+        </record>
+    </data>
+</odoo>

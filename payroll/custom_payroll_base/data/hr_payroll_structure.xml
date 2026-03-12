@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="base_payroll_structure" model="hr.payroll.structure">
+            <field name="name">Base Payroll Structure</field>
+            <field name="country_id" eval="False"/>
+            <field name="schedule_pay">monthly</field>
+            <field name="type_id" ref="custom_payroll_base.base_hr_payroll_structure_type"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="benefit1" model="benefit.type">
+            <field name="name">FOR FUTURE USE</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule31"/>
+        </record>
+
+        <record id="benefit2" model="benefit.type">
+            <field name="name">Water</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule32"/>
+        </record>
+
+        <record id="benefit3" model="benefit.type">
+            <field name="name">Electricity</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule33"/>
+        </record>
+
+        <record id="benefit4" model="benefit.type">
+            <field name="name">Telephone</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule34"/>
+        </record>
+
+        <record id="benefit5" model="benefit.type">
+            <field name="name">Servants</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule35"/>
+        </record>
+
+        <record id="benefit6" model="benefit.type">
+            <field name="name">Security Services</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule36"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="base_deductions_form_view" model="ir.ui.view">
+            <field name="name">base.deductions.form.view</field>
+            <field name="model">base.deductions</field>
+            <field name="arch" type="xml">
+                <form context="{'employee_id': employee_id}">
+                    <sheet>
+                        <field name="currency_id" invisible="1"/>
+                        <group name="deductions" string="After Tax Deduction">
+                            <group>
+                                <field name="deduction_id"/>
+                                <field name="computation"/>
+                            </group>
+                            <group>
+                                <field name="employee_id" readonly="1"/>
+                                <field name="rule_id" readonly="1"/>
+                                <field name="company_id"/>
+                                <field name="fixed"
+                                       attrs="{'invisible': [('computation', '!=', 'fixed')], 'required': [('computation', '=', 'fixed')]}"
+                                       widget="monetary"
+                                       options="{'currency_field': 'currency_id'}"/>
+                            </group>
+                            <group>
+                                <field name="date_start"/>
+                                <field name="is_permanent"/>
+                                <field name="date_end"
+                                       attrs="{'invisible': [('is_permanent', '=', True)]}"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="amount" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"/>
+                        </group>
+                        <notebook
+                                attrs="{'invisible': [('computation', '!=', 'formula')]}">
+                            <page name="ded_formula" string="Formula">
+                                <field name="formula"
+                                       attrs="{'required': [('computation', '=', 'formula')]}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
