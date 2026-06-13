@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="benefit_type_view_action" model="ir.actions.act_window">
+            <field name="name">Types of Non-Cash Benefits</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">benefit.type</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create New Non Cash Benefits
+                </p>
+            </field>
+        </record>
+        <menuitem id="menu_benefits_type"
+                  parent="om_hr_payroll.menu_hr_payroll_configuration"
+                  name="Non-Cash Benefits" sequence="102"
+                  action="benefit_type_view_action"
+                  groups="hr.group_hr_manager"/>
+
+        <!-- Benefits Type Form view-->
+        <record id="benefits_type_form_view" model="ir.ui.view">
+            <field name="name">benefits.type.form.view</field>
+            <field name="model">benefit.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="benefit_type"
+                               string="Types of Non-Cash Benefits">
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="rule_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Benefitss Type list view-->
+        <record id="benefits_type_list_view" model="ir.ui.view">
+            <field name="name">benefits.type.list_view</field>
+            <field name="model">benefit.type</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="rule_id"/>
+                </list>
+            </field>
+        </record>
+    </data>
+</odoo>

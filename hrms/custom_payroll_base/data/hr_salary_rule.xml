@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="base_rule1" model="hr.salary.rule">
+            <field name="name">Basic Pay</field>
+            <field name="code">P001</field>
+            <field name="category_id" ref="category1"/>
+            <field name="sequence">1</field>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.schedule_pay in ['monthly']
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result =  contract.wage
+            ]]></field>
+        </record>
+        <record id="base_rule2" model="hr.salary.rule">
+            <field name="name">Basic Wage -PH</field>
+            <field name="code">P002</field>
+            <field name="category_id" ref="category1"/>
+            <field name="sequence">2</field>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.schedule_pay in ['hourly']
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+PH_RATE = contract.wage
+result = worked_days.PH.number_of_hours * PH_RATE
+            ]]></field>
+        </record>
+        <record id="base_rule3" model="hr.salary.rule">
+            <field name="sequence">3</field>
+            <field name="code">P003</field>
+            <field name="name">Basic Wage -PD</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.schedule_pay in ['daily']
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+PD_RATE = contract.wage
+result = worked_days.PD.number_of_days * PD_RATE
+            ]]></field>
+        </record>
+        <record id="base_rule4" model="hr.salary.rule">
+            <field name="sequence">4</field>
+            <field name="code">P004</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule5" model="hr.salary.rule">
+            <field name="sequence">5</field>
+            <field name="code">P005</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule6" model="hr.salary.rule">
+            <field name="sequence">6</field>
+            <field name="code">P006</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule7" model="hr.salary.rule">
+            <field name="sequence">7</field>
+            <field name="code">P007</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule8" model="hr.salary.rule">
+            <field name="sequence">8</field>
+            <field name="code">P008</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule9" model="hr.salary.rule">
+            <field name="sequence">9</field>
+            <field name="code">P009</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category1"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule10" model="hr.salary.rule">
+            <field name="sequence">10</field>
+            <field name="code">P010</field>
+            <field name="name">Basic Pay</field>
+            <field name="category_id" ref="category2"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C001
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C001 ##Basic Pay Category
+            ]]></field>
+        </record>
+        <!--        CASH ALLOWANCES-->
+        <record id="base_rule11" model="hr.salary.rule">
+            <field name="sequence">11</field>
+            <field name="code">P011</field>
+            <field name="name">Bonus</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule12" model="hr.salary.rule">
+            <field name="sequence">12</field>
+            <field name="code">P012</field>
+            <field name="name">Commission</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule13" model="hr.salary.rule">
+            <field name="sequence">13</field>
+            <field name="code">P013</field>
+            <field name="name">Overtime Allowances</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule14" model="hr.salary.rule">
+            <field name="sequence">14</field>
+            <field name="code">P014</field>
+            <field name="name">Transport Allowances</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule15" model="hr.salary.rule">
+            <field name="sequence">15</field>
+            <field name="code">P015</field>
+            <field name="name">Leave Pay</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule16" model="hr.salary.rule">
+            <field name="sequence">16</field>
+            <field name="code">P016</field>
+            <field name="name">Directors Fee</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule17" model="hr.salary.rule">
+            <field name="sequence">17</field>
+            <field name="code">P017</field>
+            <field name="name">House Allowances</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule18" model="hr.salary.rule">
+            <field name="sequence">18</field>
+            <field name="code">P018</field>
+            <field name="name">Lump Sum Pay</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule19" model="hr.salary.rule">
+            <field name="sequence">19</field>
+            <field name="code">P019</field>
+            <field name="name">Other Allowances</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule20" model="hr.salary.rule">
+            <field name="sequence">20</field>
+            <field name="code">P020</field>
+            <field name="name">Global Income (Non Full Time Dir.)</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule21" model="hr.salary.rule">
+            <field name="sequence">21</field>
+            <field name="code">P021</field>
+            <field name="name">Per Diem</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+# Per Diem above KSH 2000 is taxable
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule22" model="hr.salary.rule">
+            <field name="sequence">22</field>
+            <field name="code">P022</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule23" model="hr.salary.rule">
+            <field name="sequence">23</field>
+            <field name="code">P023</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule24" model="hr.salary.rule">
+            <field name="sequence">24</field>
+            <field name="code">P024</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category3"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_cash_allowances(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_cash_allowances(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule25" model="hr.salary.rule">
+            <field name="sequence">25</field>
+            <field name="code">P025</field>
+            <field name="name">Total Cash Allowances</field>
+            <field name="category_id" ref="category4"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C003
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C003 ##Cash Allowances Category
+            ]]></field>
+        </record>
+        <record id="base_rule26" model="hr.salary.rule">
+            <field name="sequence">26</field>
+            <field name="code">P026</field>
+            <field name="name">Gross Pay (Basic + Allowances)</field>
+            <field name="category_id" ref="category5"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = True
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C001 + categories.C003 ##Basic Pay + Allowances
+            ]]></field>
+        </record>
+        <record id="base_rule30" model="hr.salary.rule">
+            <field name="sequence">30</field>
+            <field name="code">P030</field>
+            <field name="name">Gross Pay</field>
+            <field name="category_id" ref="category6"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C005
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C005 ##Gross Pay Category
+            ]]></field>
+        </record>
+        <!--        NON-CASH ALLOWANCES-->
+        <record id="base_rule31" model="hr.salary.rule">
+            <field name="sequence">31</field>
+            <field name="code">P031</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule32" model="hr.salary.rule">
+            <field name="sequence">32</field>
+            <field name="code">P032</field>
+            <field name="name">Water</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule33" model="hr.salary.rule">
+            <field name="sequence">33</field>
+            <field name="code">P033</field>
+            <field name="name">Electricity</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule34" model="hr.salary.rule">
+            <field name="sequence">34</field>
+            <field name="code">P034</field>
+            <field name="name">Telephone</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule35" model="hr.salary.rule">
+            <field name="sequence">35</field>
+            <field name="code">P035</field>
+            <field name="name">Servants</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule36" model="hr.salary.rule">
+            <field name="sequence">36</field>
+            <field name="code">P036</field>
+            <field name="name">Security Services</field>
+            <field name="category_id" ref="category7"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if contract.compute_non_cash_benefits(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.compute_non_cash_benefits(payslip, rule)
+            ]]></field>
+        </record>
+        <record id="base_rule37" model="hr.salary.rule">
+            <field name="sequence">37</field>
+            <field name="code">P037</field>
+            <field name="name">Total Non Cash Allowances</field>
+            <field name="category_id" ref="category8"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C007
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C007 ##Sum of all non Cash benefits excluding motor vehicle and housing
+            ]]></field>
+        </record>
+        <record id="base_rule41" model="hr.salary.rule">
+            <field name="sequence">41</field>
+            <field name="code">P041</field>
+            <field name="name">Gross Taxable Income</field>
+            <field name="category_id" ref="category9"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = True
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+## Gross taxable income is the Sum of Gross pay + Housing and Motor vehicle + other Non Cash Benefits if exceeds 3000 KSH
+result = categories.C006 + categories.C036 + (categories.C007 > 3000 and categories.C007 or 0.0 )
+            ]]></field>
+        </record>
+        <record id="base_rule45" model="hr.salary.rule">
+            <field name="sequence">45</field>
+            <field name="code">P045</field>
+            <field name="name">Gross Taxable Pay</field>
+            <field name="category_id" ref="category10"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C009
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C009
+            ]]></field>
+        </record>
+        <record id="base_rule81" model="hr.salary.rule">
+            <field name="sequence">81</field>
+            <field name="code">P081</field>
+            <field name="name">Taxable Pay</field>
+            <field name="category_id" ref="category22"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = True
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+taxable = categories.C010 - categories.C021 ##Gross taxable - total allowed deductions
+result = max(0, taxable) ##for negative result, set taxable pay = 0
+
+            ]]></field>
+        </record>
+        <record id="base_rule85" model="hr.salary.rule">
+            <field name="sequence">85</field>
+            <field name="code">P085</field>
+            <field name="name">Net Taxable Pay</field>
+            <field name="category_id" ref="category23"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C022
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C022
+            ]]></field>
+        </record>
+        <record id="base_rule90" model="hr.salary.rule">
+            <field name="sequence">90</field>
+            <field name="code">P090</field>
+            <field name="name">Tax Payable</field>
+            <field name="category_id" ref="category25"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C024
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C024
+            ]]></field>
+        </record>
+        <record id="base_rule101" model="hr.salary.rule">
+            <field name="sequence">101</field>
+            <field name="code">P101</field>
+            <field name="name">Net P.A.Y.E</field>
+            <field name="category_id" ref="category30"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.schedule_pay in ['monthly']
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+net_tax = categories.C025 - categories.C027 - categories.C029 ##Total tax payable - personal relief - insrurance relief
+result = max(0, net_tax)  ##if net tax is negative, set result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule105" model="hr.salary.rule">
+            <field name="sequence">105</field>
+            <field name="code">P105</field>
+            <field name="name">Net Tax Payable</field>
+            <field name="category_id" ref="category31"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C030
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C030
+            ]]></field>
+        </record>
+        <!--        POST TAX DEDUCTIONS-->
+        <record id="base_rule107" model="hr.salary.rule">
+            <field name="sequence">107</field>
+            <field name="code">P107</field>
+            <field name="name">H.E.L.B</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = False ##compute if Employee is paying H.E.L.B
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = 0
+            ]]></field>
+        </record>
+        <record id="base_rule108" model="hr.salary.rule">
+            <field name="sequence">108</field>
+            <field name="code">P108</field>
+            <field name="name">Salary Advance</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = employee.compute_deductions(payslip, rule)            ]]></field>
+        </record>
+        <record id="base_rule109" model="hr.salary.rule">
+            <field name="sequence">109</field>
+            <field name="code">P109</field>
+            <field name="name">SACCO</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule110" model="hr.salary.rule">
+            <field name="sequence">110</field>
+            <field name="code">P110</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule111" model="hr.salary.rule">
+            <field name="sequence">111</field>
+            <field name="code">P111</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule112" model="hr.salary.rule">
+            <field name="sequence">112</field>
+            <field name="code">P112</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule113" model="hr.salary.rule">
+            <field name="sequence">113</field>
+            <field name="code">P113</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule114" model="hr.salary.rule">
+            <field name="sequence">114</field>
+            <field name="code">P114</field>
+            <field name="name">FOR FUTURE USE</field>
+            <field name="category_id" ref="category32"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+if employee.compute_deductions(payslip, rule) > 0:
+    result = True
+else:
+    result = False            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.compute_deductions(payslip, rule)             ]]></field>
+        </record>
+        <record id="base_rule115" model="hr.salary.rule">
+            <field name="sequence">115</field>
+            <field name="code">P115</field>
+            <field name="name">Total Post-Tax Deductions</field>
+            <field name="category_id" ref="category33"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C032
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C032
+            ]]></field>
+        </record>
+        <record id="base_rule116" model="hr.salary.rule">
+            <field name="sequence">116</field>
+            <field name="code">P116</field>
+            <field name="name">Net Pay</field>
+            <field name="category_id" ref="category34"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = True
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+##Gross Pay - Total Net Tax - Total post tax Deductions(NHIF,HELB,SACCO) - NSSF Contributions
+result = categories.C006 - categories.C012 - categories.C031 - categories.C033 - categories.C037 - categories.C038
+
+            ]]></field>
+        </record>
+        <record id="base_rule120" model="hr.salary.rule">
+            <field name="sequence">120</field>
+            <field name="code">P120</field>
+            <field name="name">Net Pay</field>
+            <field name="category_id" ref="category35"/>
+            <field name="active" eval="True"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python"><![CDATA[
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs
+
+# Note: returned value have to be set in the variable 'result'
+
+result = categories.C034
+            ]]></field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+# Available variables:
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# rule: object containing the current rule being computed
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+# Note: returned value have to be set in the variable 'result'
+result = categories.C034
+            ]]></field>
+        </record>
+    </data>
+</odoo>

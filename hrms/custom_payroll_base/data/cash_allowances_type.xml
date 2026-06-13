@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="cash_allowance1" model="cash.allowances.type">
+            <field name="name">Bonus</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule11"/>
+        </record>
+
+        <record id="ke_cash_allowance2" model="cash.allowances.type">
+            <field name="name">Commission</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule12"/>
+        </record>
+
+        <record id="ke_cash_allowance3" model="cash.allowances.type">
+            <field name="name">Overtime Allowances</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule13"/>
+        </record>
+
+        <record id="ke_cash_allowance4" model="cash.allowances.type">
+            <field name="name">Transport Allowances</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule14"/>
+        </record>
+
+        <record id="ke_cash_allowance5" model="cash.allowances.type">
+            <field name="name">Leave Pay</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule15"/>
+        </record>
+
+        <record id="ke_cash_allowance6" model="cash.allowances.type">
+            <field name="name">Directors Fee</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule16"/>
+        </record>
+
+        <record id="ke_cash_allowance7" model="cash.allowances.type">
+            <field name="name">House Allowances</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule17"/>
+        </record>
+
+        <record id="ke_cash_allowance8" model="cash.allowances.type">
+            <field name="name">Lump Sum Pay</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule18"/>
+        </record>
+
+        <record id="ke_cash_allowance9" model="cash.allowances.type">
+            <field name="name">Other Allowances</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule19"/>
+        </record>
+
+        <record id="cash_allowance10" model="cash.allowances.type">
+            <field name="name">Global Income (Non Full Time Dir.)</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule20"/>
+        </record>
+
+        <record id="cash_allowance11" model="cash.allowances.type">
+            <field name="name">Per Diem</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule21"/>
+        </record>
+
+        <record id="cash_allowance12" model="cash.allowances.type">
+            <field name="name">FOR FUTURE USE</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule22"/>
+        </record>
+
+        <record id="cash_allowance13" model="cash.allowances.type">
+            <field name="name">FOR FUTURE USE</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule23"/>
+        </record>
+
+        <record id="cash_allowance14" model="cash.allowances.type">
+            <field name="name">FOR FUTURE USE</field>
+            <field name="rule_id" ref="custom_payroll_base.base_rule24"/>
+        </record>
+
+    </data>
+</odoo>

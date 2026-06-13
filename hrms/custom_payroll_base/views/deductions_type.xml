@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="deductions_type_view_action" model="ir.actions.act_window">
+            <field name="name">Types of Deduction</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">deductions.type</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a new Deduction
+                </p>
+            </field>
+        </record>
+        <!-- Deductions Type Form view-->
+        <record id="deductions_type_form_view" model="ir.ui.view">
+            <field name="name">deductions.type.form.view</field>
+            <field name="model">deductions.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="deduction_type"
+                               string="After Tax Deduction Type">
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="rule_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Deduction Type List view-->
+        <record id="deduction_type_list_view" model="ir.ui.view">
+            <field name="name">deduction.type.list.view</field>
+            <field name="model">deductions.type</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="rule_id"/>
+                </list>
+            </field>
+        </record>
+        <menuitem id="menu_deductions_type"
+                  parent="om_hr_payroll.menu_hr_payroll_configuration"
+                  name="After Tax Deductions" sequence="104"
+                  action="deductions_type_view_action"
+                  groups="hr.group_hr_manager,hr.group_hr_user"/>
+    </data>
+</odoo>

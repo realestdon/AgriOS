@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="payroll_structure_ke" model="hr.payroll.structure">
+            <field name="name">Kenya Payroll Structure</field>
+            <field name="code">KE</field>
+            <field name="parent_id" ref="custom_payroll_base.base_payroll_structure"/>
+            <field name="rule_ids" eval="[
+            (4, ref('custom_payroll_ke.kenya_rule46')),
+            (4, ref('custom_payroll_ke.kenya_rule47')),
+            (4, ref('custom_payroll_ke.kenya_rule55')),
+            (4, ref('custom_payroll_ke.kenya_rule56')),
+            (4, ref('custom_payroll_ke.kenya_rule57')),
+            (4, ref('custom_payroll_ke.kenya_rule65')),
+            (4, ref('custom_payroll_ke.kenya_rule66')),
+            (4, ref('custom_payroll_ke.kenya_rule67')),
+            (4, ref('custom_payroll_ke.kenya_rule80')),
+            (4, ref('custom_payroll_ke.kenya_rule86')),
+            (4, ref('custom_payroll_ke.kenya_rule91')),
+            (4, ref('custom_payroll_ke.kenya_rule95'))
+        ]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,960 @@
+/* ============================================================
+   Kenya PAYE Calculator — custom_paye_calculator
+   Design: Clean professional fintech, dark teal + warm gold
+   Font loaded via <link> in template (not @import) to avoid
+   Odoo asset-bundle concatenation breaking the @import rule.
+   ============================================================ */
+
+/* ── CSS Variables ────────────────────────────────────────── */
+:root {
+    --teal-dark:   #0b3d47;
+    --teal-mid:    #0f5260;
+    --teal-accent: #1a7a8a;
+    --gold:        #f5a623;
+    --gold-light:  #ffd580;
+    --bg:          #f4f7f8;
+    --surface:     #ffffff;
+    --border:      #e2eaec;
+    --text-main:   #0d2b33;
+    --text-muted:  #6b8a92;
+    --green:       #22c55e;
+    --red:         #ef4444;
+    --font-body:   'Plus Jakarta Sans', sans-serif;
+    --font-mono:   'DM Mono', monospace;
+    --radius-lg:   16px;
+    --radius-md:   10px;
+    --shadow-card: 0 4px 24px rgba(11,61,71,0.10);
+    --shadow-lg:   0 16px 48px rgba(11,61,71,0.16);
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+.paye_page_wrapper {
+    font-family: var(--font-body);
+    background: var(--bg);
+    min-height: 100vh;
+}
+
+/* ── Hero Banner ──────────────────────────────────────────── */
+.paye_hero {
+    background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-mid) 60%, #1a7a8a 100%);
+    padding: 72px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+.paye_hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 600px 400px at 80% 50%, rgba(245,166,35,0.08) 0%, transparent 70%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+.paye_hero_inner {
+    position: relative;
+    z-index: 1;
+}
+.paye_hero_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(245,166,35,0.15);
+    border: 1px solid rgba(245,166,35,0.35);
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.paye_hero_badge svg {
+    width: 14px; height: 14px;
+    fill: var(--gold);
+}
+.paye_hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+.paye_hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+}
+.paye_hero p {
+    color: rgba(255,255,255,0.72);
+    font-size: 16px;
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+.paye_hero_stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 36px;
+}
+.hero_stat {
+    text-align: left;
+}
+.hero_stat_num {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+}
+.hero_stat_label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 3px;
+    font-weight: 500;
+}
+.paye_hero_graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_donut_wrap {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+.hero_donut_wrap svg {
+    transform: rotate(-90deg);
+}
+.donut_center_text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.donut_center_text .dc_label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.donut_center_text .dc_value {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    font-family: var(--font-mono);
+    line-height: 1.2;
+}
+
+/* ── Main Calculator Section ──────────────────────────────── */
+.paye_calculator_section {
+    padding: 60px 0 80px;
+}
+
+/* ── Country Selector ─────────────────────────────────────── */
+.country_selector_wrap {
+    margin-bottom: 32px;
+}
+.country_selector_wrap label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: block;
+    margin-bottom: 10px;
+}
+.country_tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.country_tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+}
+.country_tab:hover {
+    border-color: var(--teal-accent);
+    color: var(--teal-dark);
+}
+.country_tab.active {
+    border-color: var(--teal-mid);
+    background: var(--teal-mid);
+    color: #fff;
+}
+.country_flag {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* ── Input Card ───────────────────────────────────────────── */
+.calc_input_card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: 36px;
+    border: 1px solid var(--border);
+    height: 100%;
+}
+.calc_input_card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--bg);
+}
+
+/* ── Salary Input ─────────────────────────────────────────── */
+.salary_field_wrap {
+    margin-bottom: 28px;
+}
+.field_label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 10px;
+}
+.salary_input_group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.salary_currency {
+    position: absolute;
+    left: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--teal-accent);
+    font-family: var(--font-mono);
+    pointer-events: none;
+    z-index: 1;
+}
+.salary_input {
+    width: 100%;
+    padding: 14px 16px 14px 60px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fafcfd;
+}
+.salary_input:focus {
+    border-color: var(--teal-accent);
+    box-shadow: 0 0 0 3px rgba(26,122,138,0.12);
+    background: #fff;
+}
+
+/* Custom range slider */
+.range_wrap {
+    margin-top: 16px;
+}
+.range_labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.salary_slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--teal-accent) var(--slider-pct, 10%), var(--border) var(--slider-pct, 10%));
+    outline: none;
+    cursor: pointer;
+}
+.salary_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background: var(--surface);
+    border: 3px solid var(--teal-mid);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(11,61,71,0.2);
+    transition: transform 0.15s ease;
+}
+.salary_slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+}
+.salary_slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: var(--surface);
+    border: 3px solid var(--teal-mid);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(11,61,71,0.2);
+}
+
+/* ── Employment Type ─────────────────────────────────────── */
+.employment_type_wrap {
+    margin-bottom: 28px;
+}
+.emp_tabs {
+    display: flex;
+    background: var(--bg);
+    border-radius: var(--radius-md);
+    padding: 4px;
+    gap: 4px;
+}
+.emp_tab {
+    flex: 1;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+    text-align: center;
+    font-family: var(--font-body);
+}
+.emp_tab.active {
+    background: var(--surface);
+    color: var(--teal-dark);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ── Toggle Deductions ────────────────────────────────────── */
+.deductions_section {
+    margin-bottom: 8px;
+}
+.deductions_title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    display: block;
+}
+.deduction_toggle_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--bg);
+}
+.deduction_toggle_row:last-child {
+    border-bottom: none;
+}
+.deduction_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.deduction_name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+.deduction_desc {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Toggle switch */
+.toggle_switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+    flex-shrink: 0;
+}
+.toggle_switch input {
+    opacity: 0;
+    width: 0; height: 0;
+}
+.toggle_track {
+    position: absolute;
+    inset: 0;
+    background: #d1d5db;
+    border-radius: 50px;
+    transition: background 0.25s ease;
+    cursor: pointer;
+}
+.toggle_track::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.25s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+.toggle_switch input:checked + .toggle_track {
+    background: var(--green);
+}
+.toggle_switch input:checked + .toggle_track::before {
+    transform: translateX(22px);
+}
+
+/* ── Results Card ─────────────────────────────────────────── */
+.calc_results_card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    height: 100%;
+}
+.results_header {
+    background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
+    padding: 28px 32px;
+    color: #fff;
+}
+.results_header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.gross_salary_display {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    font-family: var(--font-mono);
+    line-height: 1;
+}
+.gross_salary_display .curr {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-right: 4px;
+}
+
+/* Donut chart in results */
+.results_chart_wrap {
+    padding: 24px 32px 0;
+    display: flex;
+    justify-content: center;
+}
+.results_donut_svg {
+    width: 160px;
+    height: 160px;
+    transform: rotate(-90deg);
+}
+
+/* Breakdown items */
+.results_breakdown {
+    padding: 24px 32px;
+}
+.breakdown_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--bg);
+    transition: background 0.15s;
+}
+.breakdown_item:last-of-type {
+    border-bottom: none;
+}
+.breakdown_item_left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.breakdown_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.breakdown_label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+.breakdown_pct {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-top: 1px;
+}
+.breakdown_amount {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--text-main);
+}
+.breakdown_amount.deducted {
+    color: var(--red);
+}
+
+/* Net Pay box */
+.net_pay_box {
+    margin: 0 32px 32px;
+    background: linear-gradient(135deg, var(--teal-dark), var(--teal-accent));
+    border-radius: var(--radius-md);
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.net_pay_box::before {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 120px; height: 120px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+.net_pay_box::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -20px;
+    width: 100px; height: 100px;
+    background: rgba(245,166,35,0.08);
+    border-radius: 50%;
+}
+.net_pay_label {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+.net_pay_amount {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 800;
+    color: #fff;
+    font-family: var(--font-mono);
+    line-height: 1.1;
+    position: relative;
+    z-index: 1;
+}
+.net_pay_amount .curr {
+    font-size: 0.55em;
+    font-weight: 600;
+    opacity: 0.75;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.net_pay_monthly_note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 6px;
+}
+
+/* ── Info Section ─────────────────────────────────────────── */
+.paye_info_section {
+    padding: 60px 0;
+    background: #fff;
+    border-top: 1px solid var(--border);
+}
+.info_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+.info_card {
+    background: var(--bg);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    border: 1px solid var(--border);
+}
+.info_card_icon {
+    width: 44px; height: 44px;
+    background: var(--teal-mid);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.info_card_icon svg {
+    width: 22px; height: 22px;
+    fill: #fff;
+}
+.info_card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+.info_card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Tax bands table */
+.tax_bands_wrap {
+    margin-top: 48px;
+}
+.tax_bands_wrap h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+.tax_band_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.tax_band_table thead th {
+    background: var(--teal-dark);
+    color: rgba(255,255,255,0.8);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.tax_band_table thead th:first-child { border-radius: 8px 0 0 0; }
+.tax_band_table thead th:last-child  { border-radius: 0 8px 0 0; }
+.tax_band_table tbody tr:nth-child(even) {
+    background: var(--bg);
+}
+.tax_band_table tbody td {
+    padding: 12px 16px;
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+.tax_band_table tbody td:first-child {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+.rate_badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.rate_10 { background: #d1fae5; color: #065f46; }
+.rate_25 { background: #fef3c7; color: #92400e; }
+.rate_30 { background: #fee2e2; color: #991b1b; }
+.rate_32 { background: #f3e8ff; color: #6b21a8; }
+.rate_35 { background: #ffe4e6; color: #9f1239; }
+
+/* ── CTA Section ──────────────────────────────────────────── */
+.paye_cta_section {
+    padding: 72px 0;
+    background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
+    position: relative;
+    overflow: hidden;
+}
+.paye_cta_section::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: rgba(245,166,35,0.08);
+    border-radius: 50%;
+}
+.paye_cta_inner {
+    position: relative; z-index: 1;
+    text-align: center;
+}
+.paye_cta_inner h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+.paye_cta_inner p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 36px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta_btn_primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: var(--gold);
+    color: var(--teal-dark);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(245,166,35,0.3);
+}
+.cta_btn_primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(245,166,35,0.4);
+    text-decoration: none;
+    color: var(--teal-dark);
+}
+.cta_btn_secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-left: 12px;
+}
+.cta_btn_secondary:hover {
+    background: rgba(255,255,255,0.18);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ── Animations ───────────────────────────────────────────── */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.paye_hero_inner > * {
+    animation: fadeUp 0.5s ease both;
+}
+.paye_hero_inner > *:nth-child(1) { animation-delay: 0.05s; }
+.paye_hero_inner > *:nth-child(2) { animation-delay: 0.12s; }
+.paye_hero_inner > *:nth-child(3) { animation-delay: 0.2s; }
+.paye_hero_inner > *:nth-child(4) { animation-delay: 0.28s; }
+
+.calc_input_card, .calc_results_card {
+    animation: fadeUp 0.5s 0.15s ease both;
+}
+
+/* Number flip animation */
+.amount_changed {
+    animation: numFlip 0.3s ease;
+}
+@keyframes numFlip {
+    0%   { opacity: 0.4; transform: scale(0.96); }
+    100% { opacity: 1;   transform: scale(1); }
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 991px) {
+    .paye_hero { padding: 48px 0 56px; }
+    .paye_hero_graphic { display: none; }
+    .calc_input_card, .calc_results_card { margin-bottom: 24px; }
+    .paye_hero_stats { gap: 20px; }
+    .cta_btn_secondary { margin-left: 0; margin-top: 12px; }
+}
+@media (max-width: 576px) {
+    .calc_input_card, .calc_results_card { padding: 24px 20px; }
+    .net_pay_box { margin: 0 20px 24px; }
+    .results_breakdown { padding: 16px 20px; }
+    .results_header { padding: 20px 20px; }
+}
+
+/* ── Compute Button ───────────────────────────────────────── */
+.btn_compute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 15px 24px;
+    background: linear-gradient(135deg, var(--teal-mid), var(--teal-accent));
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(15,82,96,0.3);
+    margin-top: 8px;
+}
+.btn_compute:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15,82,96,0.4);
+}
+.btn_compute:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+.btn_compute svg { flex-shrink: 0; }
+
+/* Spinner inside button */
+.paye_spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: payeSpin 0.7s linear infinite;
+    vertical-align: middle;
+}
+@keyframes payeSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── Error message ────────────────────────────────────────── */
+.compute_error {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ── Empty state ──────────────────────────────────────────── */
+.results_empty_state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 32px;
+    text-align: center;
+    min-height: 320px;
+}
+.empty_icon {
+    width: 80px;
+    height: 80px;
+    background: var(--bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+.results_empty_state p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 300px;
+    margin: 0;
+}
+.results_empty_state strong {
+    color: var(--teal-accent);
+}
+
+/* ── Skeleton loading tabs ────────────────────────────────── */
+.paye_skeleton_tabs { display: flex; gap: 8px; }
+.skeleton_tab {
+    padding: 8px 20px;
+    background: var(--border);
+    border-radius: 50px;
+    font-size: 13px;
+    color: var(--text-muted);
+    animation: skeletonPulse 1.2s ease-in-out infinite;
+}
+@keyframes skeletonPulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.4; }
+}
+
+/* ── Employee options section ─────────────────────────────── */
+.employee_options_wrap {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.options_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.option_field .field_label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.yes_no_select {
+    display: flex;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.yn_btn {
+    flex: 1;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.yn_btn + .yn_btn {
+    border-left: 1.5px solid var(--border);
+}
+
+.yn_btn.active {
+    background: var(--teal-accent);
+    color: #fff;
+}
+
+.yn_btn:hover:not(.active) {
+    background: var(--bg);
+    color: var(--text-main);
+}
+
+.deductions_title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}

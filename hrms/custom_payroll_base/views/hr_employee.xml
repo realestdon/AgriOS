@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Modifying Employeee Form to add kenya specific details -->
+        <record id="custom_payroll_base.view_employee_form" model="ir.ui.view">
+            <field name="name">custom.payroll.base.view.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='country_id']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='identification_id']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='gender']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='job_id']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='marital']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='birthday']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='department_id']" position="attributes">
+                        <attribute name="required">True</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='category_ids']" position="before">
+                        <group>
+                            <field name="id" invisible="1"/>
+                            <field name="employee_no" invisible="not id or payroll_no"/>
+                            <field name="payroll_no"/>
+                        </group>
+                    </xpath>
+                    <xpath expr="//notebook" position="inside">
+                        <field name="id" invisible="1"/>
+                        <page name="deductions" string=" After Tax Deductions">
+                            <field name="deduction_ids" context="{'default_employee_id': id}">
+                                <list colors="red:amount==0">
+                                    <field name="name"/>
+                                    <field name="deduction_id" invisible="1"/>
+                                    <field name="rule_id"/>
+                                    <field name="computation"/>
+                                    <field name="fixed"/>
+                                    <field name="amount"/>
+                                </list>
+                            </field>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

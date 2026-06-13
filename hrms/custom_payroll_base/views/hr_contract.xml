@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Modifying Contracts Form to add kenyan specific details -->
+        <record id="ke_view_contract_form_inherit01" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit_01</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//page[@name='information']" position="after">
+                        <page name="benefits" string="Non-Cash Allowances">
+                            <filed name="id" invisible="1"/>
+                            <field name="benefits" context="{'default_contract_id': id}">
+                                <list colors="red:amount == 0">
+                                    <field name="id" invisible="1"/>
+                                    <field name="company_id" invisible="1"/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="contract_id" invisible="1"/>
+                                    <field name="name"/>
+                                    <field name="rule_id"/>
+                                    <field name="computation"/>
+                                    <field name="fixed" readonly="computation != 'fixed'" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                    <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page name="cash_allowances" string="Cash Allowances">
+                            <field name="cash_allowances" context="{'default_contract_id': id}">
+                                <list colors="red:amount == 0">
+                                    <field name="contract_id" invisible="1"/>
+                                    <field name="company_id" invisible="1"/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="name"/>
+                                    <field name="rule_id"/>
+                                    <field name="computation"/>
+                                    <field name="fixed" readonly="computation != 'fixed'" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                    <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                </list>
+                            </field>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

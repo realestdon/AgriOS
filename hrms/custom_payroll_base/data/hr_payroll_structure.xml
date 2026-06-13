@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="base_payroll_structure" model="hr.payroll.structure">
+        <field name="name">Base for New Structures</field>
+        <field name="code">BASE</field>
+        <field name="rule_ids" eval="[
+            (4, ref('custom_payroll_base.base_rule1')),
+            (4, ref('custom_payroll_base.base_rule2')),
+            (4, ref('custom_payroll_base.base_rule3')),
+            (4, ref('custom_payroll_base.base_rule4')),
+            (4, ref('custom_payroll_base.base_rule5')),
+            (4, ref('custom_payroll_base.base_rule6')),
+            (4, ref('custom_payroll_base.base_rule7')),
+            (4, ref('custom_payroll_base.base_rule8')),
+            (4, ref('custom_payroll_base.base_rule9')),
+            (4, ref('custom_payroll_base.base_rule10')),
+            (4, ref('custom_payroll_base.base_rule11')),
+            (4, ref('custom_payroll_base.base_rule12')),
+            (4, ref('custom_payroll_base.base_rule13')),
+            (4, ref('custom_payroll_base.base_rule14')),
+            (4, ref('custom_payroll_base.base_rule15')),
+            (4, ref('custom_payroll_base.base_rule16')),
+            (4, ref('custom_payroll_base.base_rule17')),
+            (4, ref('custom_payroll_base.base_rule18')),
+            (4, ref('custom_payroll_base.base_rule19')),
+            (4, ref('custom_payroll_base.base_rule20')),
+            (4, ref('custom_payroll_base.base_rule21')),
+            (4, ref('custom_payroll_base.base_rule22')),
+            (4, ref('custom_payroll_base.base_rule23')),
+            (4, ref('custom_payroll_base.base_rule24')),
+            (4, ref('custom_payroll_base.base_rule25')),
+            (4, ref('custom_payroll_base.base_rule26')),
+            (4, ref('custom_payroll_base.base_rule30')),
+            (4, ref('custom_payroll_base.base_rule31')),
+            (4, ref('custom_payroll_base.base_rule32')),
+            (4, ref('custom_payroll_base.base_rule33')),
+            (4, ref('custom_payroll_base.base_rule34')),
+            (4, ref('custom_payroll_base.base_rule35')),
+            (4, ref('custom_payroll_base.base_rule36')),
+            (4, ref('custom_payroll_base.base_rule37')),
+            (4, ref('custom_payroll_base.base_rule41')),
+            (4, ref('custom_payroll_base.base_rule45')),
+            (4, ref('custom_payroll_base.base_rule81')),
+            (4, ref('custom_payroll_base.base_rule85')),
+            (4, ref('custom_payroll_base.base_rule90')),
+            (4, ref('custom_payroll_base.base_rule101')),
+            (4, ref('custom_payroll_base.base_rule105')),
+            (4, ref('custom_payroll_base.base_rule107')),
+            (4, ref('custom_payroll_base.base_rule108')),
+            (4, ref('custom_payroll_base.base_rule109')),
+            (4, ref('custom_payroll_base.base_rule110')),
+            (4, ref('custom_payroll_base.base_rule111')),
+            (4, ref('custom_payroll_base.base_rule112')),
+            (4, ref('custom_payroll_base.base_rule113')),
+            (4, ref('custom_payroll_base.base_rule114')),
+            (4, ref('custom_payroll_base.base_rule115')),
+            (4, ref('custom_payroll_base.base_rule116')),
+            (4, ref('custom_payroll_base.base_rule120'))
+        ]"/>
+
+    </record>
+
+</odoo>

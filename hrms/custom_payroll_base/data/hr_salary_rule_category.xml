@@ -1,0 +1,191 @@
+<odoo>
+    <data>
+        <!-- Special Category 20 comes first -->
+        <record id="category20" model="hr.salary.rule.category">
+            <field name="code">C020</field>
+            <field name="name">Allowed Deductions Category</field>
+            <field name="note">A Category for All Allowed Deductions</field>
+        </record>
+        <!-- Other Categories -->
+        <record id="category1" model="hr.salary.rule.category">
+            <field name="code">C001</field>
+            <field name="name">Basic Pay Category</field>
+            <field name="note">Category for All Kinds of Basic Pay</field>
+        </record>
+        <record id="category2" model="hr.salary.rule.category">
+            <field name="code">C002</field>
+            <field name="name">Sum of Basic pays Category</field>
+            <field name="note">A Category for Sum of Basic pays</field>
+        </record>
+        <record id="category3" model="hr.salary.rule.category">
+            <field name="code">C003</field>
+            <field name="name">Cash Allowances Category</field>
+            <field name="note">A Category for All Cash Allowances</field>
+        </record>
+        <record id="category4" model="hr.salary.rule.category">
+            <field name="code">C004</field>
+            <field name="name">Sum of Cash Allowances</field>
+            <field name="note">A Category for Sum of Cash Allowances</field>
+        </record>
+        <record id="category5" model="hr.salary.rule.category">
+            <field name="code">C005</field>
+            <field name="name">Gross Pay Category</field>
+            <field name="note">A Category for All Gross Pay</field>
+        </record>
+        <record id="category6" model="hr.salary.rule.category">
+            <field name="code">C006</field>
+            <field name="name">Sum of Gross Pays Category</field>
+            <field name="note">A Category for Sum of Gross Pays </field>
+        </record>
+        <record id="category7" model="hr.salary.rule.category">
+            <field name="code">C007</field>
+            <field name="name">Non Cash Benefits Category</field>
+            <field name="note">A Category for All Non Cash Benefits</field>
+        </record>
+        <record id="category8" model="hr.salary.rule.category">
+            <field name="code">C008</field>
+            <field name="name">Sum of Non Cash Benefits Category</field>
+            <field name="note">A Category for Sum of Non Cash Benefits</field>
+        </record>
+        <record id="category9" model="hr.salary.rule.category">
+            <field name="code">C009</field>
+            <field name="name">Gross Taxable Income Category</field>
+            <field name="note">A Category for All Gross Taxable Income</field>
+        </record>
+        <record id="category10" model="hr.salary.rule.category">
+            <field name="code">C010</field>
+            <field name="name">Sum of Gross Taxable Incomes Category</field>
+            <field name="note">A Category for Sum of Gross Taxable Incomes </field>
+        </record>
+        <record id="category11" model="hr.salary.rule.category">
+            <field name="code">C011</field>
+            <field name="name">NSSF Member Contributions Category</field>
+            <field name="note">A Category for NSSF Member Contributions</field>
+        </record>
+        <record id="category12" model="hr.salary.rule.category">
+            <field name="code">C012</field>
+            <field name="name">Sum of NSSF Contributions Category</field>
+            <field name="note">A Category for Sum of NSSF Contributions</field>
+            <field name="parent_id" ref="category20"/>
+        </record>
+        <record id="category13" model="hr.salary.rule.category">
+            <field name="code">C013</field>
+            <field name="name">NSSF Employer Contributions Category</field>
+            <field name="note">A Category for NSSF Employer Contributions</field>
+        </record>
+        <record id="category14" model="hr.salary.rule.category">
+            <field name="code">C014</field>
+            <field name="name">Sum of NSSF Employer Contributions Category</field>
+            <field name="note">A Category for Sum of NSSF Employer Contributions</field>
+        </record>
+        <record id="category15" model="hr.salary.rule.category">
+            <field name="code">C015</field>
+            <field name="name">Pension/Provident Fund Category</field>
+            <field name="note">A Category for Pension/Provident Fund</field>
+        </record>
+        <record id="category16" model="hr.salary.rule.category">
+            <field name="code">C016</field>
+            <field name="name">Sum of Pension/Provident Fund Category</field>
+            <field name="note">A Category for Sum of Pension/Provident Fund </field>
+            <field name="parent_id" ref="category20"/>
+        </record>
+        <record id="category17" model="hr.salary.rule.category">
+            <field name="code">C017</field>
+            <field name="name">H.O.S.P Category</field>
+            <field name="note">A Category for All H.O.S.P</field>
+        </record>
+        <record id="category18" model="hr.salary.rule.category">
+            <field name="code">C018</field>
+            <field name="name">Mortgage Interest Category</field>
+            <field name="note">A Category for All Mortgage Interest</field>
+        </record>
+        <record id="category19" model="hr.salary.rule.category">
+            <field name="code">C019</field>
+            <field name="name">H.O.S.P/MI Category</field>
+            <field name="note">A Category for H.O.S.P/MI Category </field>
+            <field name="parent_id" ref="category20"/>
+        </record>
+        <!-- Special Category 20 is at the top of this list  ...comes first -->
+        <record id="category21" model="hr.salary.rule.category">
+            <field name="code">C021</field>
+            <field name="name">Sum of Allowed Deductions Category</field>
+            <field name="note">A Category for All Sum of Allowed Deductions</field>
+        </record>
+        <record id="category22" model="hr.salary.rule.category">
+            <field name="code">C022</field>
+            <field name="name">Taxable Pay Category</field>
+            <field name="note">A Category for Taxable Pay </field>
+        </record>
+        <record id="category23" model="hr.salary.rule.category">
+            <field name="code">C023</field>
+            <field name="name">Sum of Taxable Pays Category</field>
+            <field name="note">A Category for Sum of Taxable Pays </field>
+        </record>
+        <record id="category24" model="hr.salary.rule.category">
+            <field name="code">C024</field>
+            <field name="name">Tax Payable Category</field>
+            <field name="note">A Category for Tax Payable</field>
+        </record>
+        <record id="category25" model="hr.salary.rule.category">
+            <field name="code">C025</field>
+            <field name="name">Sum of Tax Payable Category</field>
+            <field name="note">A Category for Sum of Tax Payable</field>
+        </record>
+        <record id="category26" model="hr.salary.rule.category">
+            <field name="code">C026</field>
+            <field name="name">Personal Tax Relief Category</field>
+            <field name="note">A Category for Personal Tax Relief</field>
+        </record>
+        <record id="category27" model="hr.salary.rule.category">
+            <field name="code">C027</field>
+            <field name="name">Sum of Personal Tax Relief Category</field>
+            <field name="note">A Category for Sum of Personal Tax Relief</field>
+        </record>
+        <record id="category28" model="hr.salary.rule.category">
+            <field name="code">C028</field>
+            <field name="name">Insurance Relief Category</field>
+            <field name="note">A Category for Insurance Relief </field>
+        </record>
+        <record id="category29" model="hr.salary.rule.category">
+            <field name="code">C029</field>
+            <field name="name">Sum of Insurance Relief Category</field>
+            <field name="note">A Category for Sum of Insurance Relief</field>
+        </record>
+        <record id="category30" model="hr.salary.rule.category">
+            <field name="code">C030</field>
+            <field name="name">Net Tax Payable</field>
+            <field name="note">A Category for Net Tax Payable</field>
+        </record>
+        <record id="category31" model="hr.salary.rule.category">
+            <field name="code">C031</field>
+            <field name="name">Sum of Net Tax Payable Category</field>
+            <field name="note">A Category for Sum of Net Tax Payable</field>
+        </record>
+        <record id="category32" model="hr.salary.rule.category">
+            <field name="code">C032</field>
+            <field name="name">Post Tax Deductions Category</field>
+            <field name="note">A Category for Post Tax Deductions</field>
+        </record>
+        <record id="category33" model="hr.salary.rule.category">
+            <field name="code">C033</field>
+            <field name="name">Sum of Post Tax Deductions Category</field>
+            <field name="note">A Category for Sum of Post Tax Deductions</field>
+        </record>
+        <record id="category34" model="hr.salary.rule.category">
+            <field name="code">C034</field>
+            <field name="name">Net Pay Category</field>
+            <field name="note">A Category for Net Pay</field>
+        </record>
+        <record id="category35" model="hr.salary.rule.category">
+            <field name="code">C035</field>
+            <field name="name">Sum of Net Pay Category</field>
+            <field name="note">A Category for Sum of Net Pay</field>
+        </record>
+        <record id="category36" model="hr.salary.rule.category">
+            <field name="code">C036</field>
+            <field name="name">Housing and Motor Vehicle Category</field>
+            <field name="note">A Category for Housing and Motor Vehicle</field>
+        </record>
+
+</data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Cash Allowances  Form view-->
+        <record id="cash_allowances_form_view" model="ir.ui.view">
+            <field name="name">cash.allowances.form.view</field>
+            <field name="model">cash.allowances</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="cash_allowances" string="Cash Allowances">
+                            <field name="company_id" invisible="1"/>
+                            <field name="currency_id" invisible="1"/>
+                            <group>
+                                <field name="cash_allowance_id"/>
+                                <field name="computation"/>
+                            </group>
+                            <group>
+                                <field name="contract_id" readonly="1"/>
+                                <field name="rule_id" readonly="1"/>
+                                <field name="fixed" invisible="computation != 'fixed'" required="computation == 'fixed'" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            </group>
+                             <group>
+                                <field name="date_start"/>
+                                <field name="is_permanent"/>
+                                <field name="date_end" invisible="is_permanent"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </group>
+                        <notebook invisible="computation != 'formula'">
+                            <page name="formula" string="Formula">
+                                <field name="formula" required="computation == 'formula'"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

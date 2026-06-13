@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="menu_paye_calculator" model="website.menu">
+            <field name="name">PAYE Calculator</field>
+            <field name="url">/paye-calculator</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="sequence">60</field>
+        </record>
+    </data>
+</odoo>

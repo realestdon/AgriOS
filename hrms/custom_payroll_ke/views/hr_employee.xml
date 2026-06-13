@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="custom_payroll_base_view_employee_form" model="ir.ui.view">
+            <field name="name">custom.payroll.base.view.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//group[@name='active_group']" position="after">
+                    <group colspan="6" string="Payroll">
+                        <group>
+                            <field name="resident"/>
+                        </group>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

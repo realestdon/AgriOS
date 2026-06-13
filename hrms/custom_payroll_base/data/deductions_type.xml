@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+	<record id="deduction1" model="deductions.type">
+	   <field name="name">H.E.L.B</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule107"/>
+	</record>
+
+	<record id="deduction2" model="deductions.type">
+	   <field name="name">Salary Advance</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule108"/>
+	</record>
+
+	<record id="deduction3" model="deductions.type">
+	   <field name="name">SACCO Contributions</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule109"/>
+	</record>
+
+	<record id="deduction4" model="deductions.type">
+	   <field name="name">FOR FUTURE USE</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule110"/>
+	</record>
+
+	<record id="deduction5" model="deductions.type">
+	   <field name="name">FOR FUTURE USE</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule111"/>
+	</record>
+
+	<record id="deduction6" model="deductions.type">
+	   <field name="name">FOR FUTURE USE</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule112"/>
+	</record>
+
+	<record id="deduction7" model="deductions.type">
+	   <field name="name">FOR FUTURE USE</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule113"/>
+	</record>
+
+	<record id="deduction8" model="deductions.type">
+	   <field name="name">FOR FUTURE USE</field>
+           <field name="rule_id" ref="custom_payroll_base.base_rule114"/>
+	</record>
+    </data>
+</odoo>
